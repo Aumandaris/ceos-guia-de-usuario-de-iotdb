@@ -1,0 +1,17 @@
+site:
+  title: Guía de Usuario de IoTDB
+  url: https://aumandaris.github.io/ceos-grafana-docs/ceos-grafana-docs/7.5.x/index.html
+content:
+  sources: 
+  - url: https://github.com/Aumandaris/ceos-grafana-docs.git
+ui:
+  bundle: 
+    url: https://github.com/Aumandaris/ceos-grafana-docs/releases/download/1.0/paquete-interfaz-grafana.zip
+    snapshot: true
+  supplemental_files:
+  - path: ui.yml
+    contents: |
+      static_files: [ .nojekyll ]
+  - path: .nojekyll
+output:
+  dir: ./docs
