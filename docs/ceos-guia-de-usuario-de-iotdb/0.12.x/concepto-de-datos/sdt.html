@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/concepto-de-datos/sdt.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-grafana-docs/ceos-grafana-docs/7.5.x/_images/logo.png" width="100">
+        <span>| Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#comenzando/comenzando.adoc">Comenzando</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#comenzando/con-grafana.adoc">Con Grafana</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#comenzando/con-grafana-y-prometheus.adoc">Con Grafana y Prometheus</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#comenzando/series-de-tiempo.adoc">Series de tiempo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#comenzando/dimensiones-de-las-series-de-tiempo.adoc">Dimensiones de las series de tiempo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#comenzando/glosario.adoc">Glosario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#autenticacion/autenticacion.adoc">Autenticación</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#autenticacion/autenticacion-de-grafana.adoc">Autenticación de Grafana</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#instalacion/instalacion.adoc">Instalación</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#instalacion/requisitos.adoc">Requisitos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#instalacion/instalar-en-windows.adoc">Instalar en Windows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#instalacion/actualizar-grafana.adoc">Actualizar Grafana</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#instalacion/reiniciar-grafana.adoc">Reiniciar Grafana</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#administracion/administracion.adoc">Administración</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#administracion/preferencias.adoc">Preferencias</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administracion/preferencias/cambiar-nombre-y-correo-electronico.adoc">Cambiar nombre y correo electrónico</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administracion/preferencias/cambiar-el-tema-de-la-interfaz-de-usuario.adoc">Cambiar el tema de la interfaz de usuario</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administracion/preferencias/cambiar-tablero-de-inicio.adoc">Camniar tablero de inicio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administracion/preferencias/cambiar-la-zona-horaria-predeterminada.adoc">Cambiar la zona horaria predeterminada</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#administracion/ver-servidor.adoc">Ver servidor</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administracion/ver-servidor/metricas-internas-de-grafana.adoc">Métricas internas de Grafana</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administracion/ver-servidor/ver-configuracion-del-servidor.adoc">Ver configuración del servidor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administracion/ver-servidor/ver-estadisticas-del-servidor.adoc">Ver estadísticas del servidor</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#administracion/configuracion.adoc">Configuración</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#administracion/cli-de-grafana.adoc">CLI de Grafana</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#administracion/seguridad.adoc">Seguridad</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#administrar-usuarios/administrar-usuarios.adoc">Administrar usuarios</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#administrar-usuarios/tareas-de-administrador-de-servidor.adoc">Tareas de administrador de servidor</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administrar-usuarios/tareas-de-administrador-de-servidor/administrar-usuarios.adoc">Administrar usuarios</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administrar-usuarios/tareas-de-administrador-de-servidor/administrar-organizacion.adoc">Administrar organización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#administrar-usuarios/tareas-de-administrador-de-organizacion.adoc">Tareas de administrador de organización</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#administrar-usuarios/administrar-equipos.adoc">Administrar equipos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#administrar-usuarios/tareas-de-la-cuenta-de-usuario.adoc">Tareas de la cuenta de usuario</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administrar-usuarios/tareas-de-la-cuenta-de-usuario/perfil-de-cuenta-de-usuario.adoc">Perfil de cuenta de usuario</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administrar-usuarios/tareas-de-la-cuenta-de-usuario/cambiar-su-contraseña">Cambiar su contraseña</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#administrar-usuarios/tareas-de-la-cuenta-de-usuario/cambiar-organizacion">Cambiar organización</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#permisos/permisos.adoc">Permisos</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#permisos/roles-de-la-organizacion.adoc">Roles de la organización</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#permisos/permisos-de-tablero-y-carpeta.adoc">Permiso de tablero y carpeta</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#permisos/restringir-acceso">Restringir acceso</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#permisos/permisos-de-fuente-de-datos.adoc">Permisos de fuente de datos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#fuentes-de-datos/fuentes-de-datos.adoc">Fuentes de datos</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fuentes-de-datos/agregar-una-fuente-de-datos.adoc">Agregar una fuente de datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fuentes-de-datos/loki.adoc">Loki</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fuentes-de-datos/prometheus.adoc">Prometheus</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#paneles/paneles.adoc">Paneles</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#paneles/agregar-un-panel.adoc">Agregar un panel</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#paneles/editor-de-paneles.adoc">Editor de paneles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#paneles/lista-de-calculos.adoc">Lista de cálculos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#paneles/consultas.adoc">Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#paneles/umbrales.adoc">Umbrales</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#paneles/transformaciones.adoc">Transformaciones</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/transformaciones/aplicar-transformaciones.adoc">Aplicar transformaciones</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/transformaciones/tipos-y-opciones-de-transformacion.adoc">Tipos y opciones de transformación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#paneles/compartir-resultados-de-la-consulta.adoc">Compartir resultados de la consulta</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#paneles/inspeccionar-un-panel.adoc">Inspeccionar un panel</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#paneles/opciones-de-campo-y-anulaciones.adoc">Opciones de campo y anulaciones</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/opciones-de-campo-y-anulaciones/configurar-todos-los-campos.adoc">Configurar todos los campos</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/opciones-de-campo-y-anulaciones/configurar-campos-especificos.adoc">Configurar campos específicos</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/opciones-de-campo-y-anulaciones/opciones-de-campo-estandar.adoc">Opciones de campo estándar</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#paneles/visualizaciones.adoc">Visualizaciones</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/opciones-de-leyenda-del-panel.adoc">Opciones de leyenda del panel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-lista-de-alertas.adoc">Panel de lista de alertas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-medidor-de-barra.adoc">Panel de medidor de barra</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-lista-de-tableros.adoc">Panel de lista de tableros</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-medidor.adoc">Panel de medidor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-grafico.adoc">Panel de gráfico</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-mapa-de-calor.adoc">Panel de mapa de calor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-registros.adoc">Panel de registros</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-noticias">Panel de noticias</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-grafico-de-nodo.adoc">Panel de gráfico de nodo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-grafico-circular.adoc">Panel de gráfico circular</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-estadisticas.adoc">Panel de estadísticas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-tabla.adoc">Panel de tabla</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-tabla/opciones-de-campo-de-tabla.adoc">Opciones de campo de tabla</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-tabla/filtrar-columnas-de-la-tabla.adoc">Filtrar columnas de la tabla</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-texto.adoc">Panel de texto</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-series-de-tiempo.adoc">Panel de series de tiempo</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-series-de-tiempo/graficar-series-de-tiempo-como-lineas.adoc">Graficar series de tiempo como líneas</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-series-de-tiempo/graficar-series-de-tiempo-como-lineas.adoc">Graficar series de tiempo como líneas</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-series-de-tiempo/graficar-series-de-tiempo-como-lineas.adoc">Graficar series de tiempo como líneas</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#paneles/visualizaciones/panel-de-series-de-tiempo/cambiar-visualizacion-del-eje.adoc">Cambiar visualización del eje</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#paneles/expresiones.adoc">Expresiones</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#tableros/tableros.adoc">Tableros</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#compartir/compartir.adoc">Compartir</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#explorar/explorar.adoc">Explorar</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#alertas/alertas.adoc">Alertas</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#solucion-de-problemas/solucion-de-problemas.adoc">Solución de problemas</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/concepto-de-datos/sdt.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p>SDT
+El algoritmo Swinging Door Trending (SDT) es un algoritmo de compresión con pérdida. SDT tiene una complejidad computacional baja y usa una tendencia lineal para representar una cantidad de datos.</p>
+</div>
+<div class="paragraph">
+<p>En IoTDB, SDT comprime y descarta datos al descargarlos en el disco.</p>
+</div>
+<div class="paragraph">
+<p>IoTDB le permite especificar las propiedades de SDT al crear una serie temporal y admite tres propiedades:</p>
+</div>
+<div class="sect1">
+<h2 id="_compdev_desviación_de_la_compresión"><a class="anchor" href="#_compdev_desviación_de_la_compresión"></a>CompDev (Desviación de la Compresión)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CompDev es el parámetro más importante en SDT que representa la diferencia máxima entre la muestra actual y la tendencia lineal actual. CompDev debe ser mayor que 0 para realizar la compresión.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compmintime_intervalo_de_tiempo_mínimo_de_compresión"><a class="anchor" href="#_compmintime_intervalo_de_tiempo_mínimo_de_compresión"></a>CompMinTime (Intervalo de Tiempo Mínimo de Compresión)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CompMinTime es un parámetro que mide la distancia de tiempo entre dos puntos de datos almacenados, que se utiliza para reducir el ruido. Si el intervalo de tiempo entre el punto actual y el último punto almacenado es menor o igual a su valor, el punto actual NO se almacenará independientemente de la desviación de la compresión. El valor predeterminado es 0 con unidad de tiempo ms.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compmaxtime_intervalo_de_tiempo_máximo_de_compresión"><a class="anchor" href="#_compmaxtime_intervalo_de_tiempo_máximo_de_compresión"></a>CompMaxTime (Intervalo de Tiempo Máximo de Compresión)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CompMaxTime es un parámetro que mide la distancia de tiempo entre dos puntos de datos almacenados. Si el intervalo de tiempo entre el punto actual y el último punto almacenado es mayor o igual a su valor, el punto actual se almacenará independientemente de la desviación de la compresión. El valor predeterminado es 9.223.372.036.854.775.807 con unidad de tiempo ms.</p>
+</div>
+<div class="paragraph">
+<p>La sintaxis especificada para SDT se detalla en [Crear Declaración de Serie Temporal].</p>
+</div>
+<div class="paragraph">
+<p>Tipos de datos admitidos:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>INT32 (Entero)</p>
+</li>
+<li>
+<p>INT64 (Entero Largo)</p>
+</li>
+<li>
+<p>FLOAT (Punto Flotante de Precisión Simple)</p>
+</li>
+<li>
+<p>DOUBLE (Punto Flotante de Precisión Doble)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>El siguiente es un ejemplo del uso de la compresión SDT.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; CREATE TIMESERIES root.sg1.d0.s0 WITH DATATYPE=INT32,ENCODING=PLAIN,LOSS=SDT,COMPDEV=2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Antes del lavado y la compresión SDT, los resultados se muestran a continuación:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; SELECT s0 FROM root.sg1.d0
++-----------------------------+--------------+
+|                         Time|root.sg1.d0.s0|
++-----------------------------+--------------+
+|2017-11-01T00:06:00.001+08:00|             1|
+|2017-11-01T00:06:00.002+08:00|             1|
+|2017-11-01T00:06:00.003+08:00|             1|
+|2017-11-01T00:06:00.004+08:00|             1|
+|2017-11-01T00:06:00.005+08:00|             1|
+|2017-11-01T00:06:00.006+08:00|             1|
+|2017-11-01T00:06:00.007+08:00|             1|
+|2017-11-01T00:06:00.015+08:00|            10|
+|2017-11-01T00:06:00.016+08:00|            20|
+|2017-11-01T00:06:00.017+08:00|             1|
+|2017-11-01T00:06:00.018+08:00|            30|
++-----------------------------+--------------+
+Total line number = 11
+It costs 0.008s</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Después del descarte y la compresión SDT, los resultados se muestran a continuación:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; FLUSH
+IoTDB&gt; SELECT s0 FROM root.sg1.d0
++-----------------------------+--------------+
+|                         Time|root.sg1.d0.s0|
++-----------------------------+--------------+
+|2017-11-01T00:06:00.001+08:00|             1|
+|2017-11-01T00:06:00.007+08:00|             1|
+|2017-11-01T00:06:00.015+08:00|            10|
+|2017-11-01T00:06:00.016+08:00|            20|
+|2017-11-01T00:06:00.017+08:00|             1|
++-----------------------------+--------------+
+Total line number = 5
+It costs 0.044s</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>SDT entra en vigor cuando se descarta en el disco. El algoritmo SDT siempre almacena el primer punto y no almacena el último punto.</p>
+</div>
+<div class="paragraph">
+<p>Los datos en [2017-11-01T00:06:00.001, 2017-11-01T00:06:00.007] están dentro de la desviación de compresión, por lo que se descartaron. El punto de datos en el momento 2017-11-01T00:06:00.007 se almacena porque el siguiente punto de datos en el momento 2017-11-01T00:06:00.015 excede la desviación de compresión. Cuando un punto de datos excede la desviación de compresión, SDT almacena el último punto leído y actualiza los límites superior e inferior. El último punto a la hora 2017-11-01T00:06:00.018 no se almacena.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
