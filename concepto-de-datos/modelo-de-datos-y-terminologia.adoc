@@ -127,87 +127,253 @@ Una ruta con `*` al final tiene el mismo significado que una ruta de prefijo, po
 
 La marca de tiempo es el momento en el que se producen los datos. Incluye marcas de tiempo absolutas y marcas de tiempo relativas
 
-Marca de tiempo absoluta
+==== Marca de tiempo absoluta
+
 Las marcas de tiempo absolutas en IoTDB se dividen en dos tipos: LONG y DATETIME (incluidas DATETIME-INPUT y DATETIME-DISPLAY). Cuando un usuario ingresa una marca de tiempo, puede usar una marca de tiempo de tipo LONG o una marca de tiempo de tipo DATETIME-INPUT, y los formatos admitidos de la marca de tiempo de tipo DATETIME-INPUT se muestran en la siguiente tabla:
 
-** Formatos admitidos de marca de tiempo del tipo DATETIME-INPUT **
-Formato
-aaaa-MM-dd HH: mm: ss
-aaaa / MM / dd HH: mm: ss
-aaaa.MM.dd HH: mm: ss
-aaaa-MM-dd'T'HH: mm: ss
-aaaa / MM / dd'T'HH: mm: ss
-aaaa.MM.dd'T'HH: mm: ss
-aaaa-MM-dd HH: mm: ssZZ
-aaaa / MM / dd HH: mm: ssZZ
-aaaa.MM.dd HH: mm: ssZZ
-aaaa-MM-dd'T'HH: mm: ssZZ
-aaaa / MM / dd'T'HH: mm: ssZZ
-aaaa.MM.dd'T'HH: mm: ssZZ
-aaaa / MM / dd HH: mm: ss.SSS
-aaaa-MM-dd HH: mm: ss.SSS
-aaaa.MM.dd HH: mm: ss.SSS
-aaaa / MM / dd'T'HH: mm: ss.SSS
-aaaa-MM-dd'T'HH: mm: ss.SSS
-aaaa.MM.dd'T'HH: mm: ss.SSS
-aaaa-MM-dd HH: mm: ss.SSSZZ
-aaaa / MM / dd HH: mm: ss.SSSZZ
-aaaa.MM.dd HH: mm: ss.SSSZZ
-aaaa-MM-dd'T'HH: mm: ss.SSSZZ
-aaaa / MM / dd'T'HH: mm: ss.SSSZZ
-aaaa.MM.dd'T'HH: mm: ss.SSSZZ
-Formato de hora estándar ISO8601
+*Formatos admitidos de marca de tiempo del tipo DATETIME-INPUT*
+
+[cols="1"]  
+|=== 
+|*Formato*
+|aaaa-MM-dd HH:mm:ss
+|aaaa/MM/dd HH:mm:ss
+|aaaa.MM.dd HH:mm:ss
+|aaaa-MM-dd'T'HH:mm:ss
+|aaaa/MM/dd'T'HH:mm:ss
+|aaaa.MM.dd'T'HH:mm:ss
+|aaaa-MM-dd HH:mm:ssZZ
+|aaaa/MM/dd HH:mm:ssZZ
+|aaaa.MM.dd HH:mm:ssZZ
+|aaaa-MM-dd'T'HH:mm:ssZZ
+|aaaa/MM/dd'T'HH:mm:ssZZ
+|aaaa.MM.dd'T'HH:mm:ssZZ
+|aaaa/MM/dd HH:mm:ss.SSS
+|aaaa-MM-dd HH:mm:ss.SSS
+|aaaa.MM.dd HH:mm:ss.SSS
+|aaaa/MM/dd'T'HH:mm:ss.SSS
+|aaaa-MM-dd'T'HH:mm:ss.SSS
+|aaaa.MM.dd'T'HH:mm:ss.SSS
+|aaaa-MM-dd HH:mm:ss.SSSZZ
+|aaaa/MM/dd HH:mm:ss.SSSZZ
+|aaaa.MM.dd HH:mm:ss.SSSZZ
+|aaaa-MM-dd'T'HH:mm:ss.SSSZZ
+|aaaa/MM/dd'T'HH:mm:ss.SSSZZ
+|aaaa.MM.dd'T'HH:mm:ss.SSSZZ
+|Formato de hora estándar ISO8601
+|===
+
 IoTDB puede admitir tipos LONG y tipos DATETIME-DISPLAY al mostrar marcas de tiempo. El tipo DATETIME-DISPLAY puede admitir formatos de hora definidos por el usuario. La sintaxis del formato de hora personalizado se muestra en la siguiente tabla:
 
-** La sintaxis del formato de hora personalizado **
-Símbolo Significado Ejemplos de presentación
-G era era era
-C siglo de era (> = 0) número 20
-Y año de era (> = 0) año 1996
-x semana año año 1996
-semana de la semana año número 27
-El día de la semana número 2
-E texto del día de la semana martes; mar
-año año 1996
-D día del año número 189
-M mes del año mes julio; Jul; 07
-d día del mes número 10
-un medio día de texto del día PM
-K hora del medio día (0 ~ 11) número 0
-h hora del medio día (1 ~ 12) número 12
-H hora del día (0 ~ 23) número 0
-k reloj hora del día (1 ~ 24) número 24
-m minuto de la hora número 30
-s segundo del minuto número 55
-S fracción de segundo milis 978
-z texto de la zona horaria Hora estándar del Pacífico; PST
-Desplazamiento de zona horaria Z / zona de identificación -0800; -08: 00; America / Los_Angeles
-'escape para delimitador de texto
-'' literal de comillas simples '
-Relativa de tiempo activa
-La hora relativa se refiere a la hora relativa a la hora del servidor ahora () y la hora DATETIME.
+*La sintaxis del formato de hora personalizado*
+
+[cols="1,1,1,1"]  
+|=== 
+|Símbolo
+|Significado
+|Presentación
+|Ejemplos
+
+|G 
+|era 
+|era 
+|era
+
+|C 
+|siglo de era (>=0) 
+|número 
+|20
+
+|Y 
+|año de era (>=0) 
+|año 
+|1996
+
+|x 
+|semana año
+|año 
+|1996
+
+|w
+|semana de la semana año 
+|número 
+|27
+
+|e
+|día de la semana 
+|número 
+|2
+
+|E
+|día de la semana
+|texto
+|Tuesday; Tue
+
+|y
+|año
+|año 
+|1996
+
+|D 
+|día del año 
+|número 
+|189
+
+|M 
+|mes del año 
+|mes
+|July; Jul; 07
+
+|d 
+|día del mes 
+|número 
+|10
+
+|a 
+|mediodía del día
+|texto
+|PM
+
+|K 
+|hora del mediodía (0 ~ 11) 
+|número 
+|0
+
+|h 
+|hora de reloj del mediodía 
+|(1 ~ 12) 
+|número 
+|12
+
+|H
+|hora del día (0 ~ 23)
+|número 
+|0
+
+|k 
+|hora de reloj del día (1 ~ 24)
+|número
+|24
+
+|m 
+|minuto de la hora 
+|número 
+|30
+
+|s 
+|segundo del minuto 
+|número 
+|55
+
+|S 
+|fracción de segundo 
+|milis 
+|978
+
+||z 
+|zona horaria 
+|texto
+|Pacific Standard Time; PST
+
+|Z 
+|desplazamiento de zona horaria/id
+|zona 
+|-0800; -08:00; America/Los_Angeles
+
+|'
+|escape para texto
+|delimitador
+|
+
+|'' 
+|comillas simples
+|literal
+|'
+|===
+
+==== Marca de tiempo relativa
+
+La hora relativa se refiere a la hora relativa a la hora del servidor `now()` y la hora `DATETIME`.
 
 Sintaxis:
 
-  Duración = (Dígito + ('Y' | 'MO' | 'W' | 'D' | 'H' | 'M' | 'S' | 'MS' | 'US' | 'NS')) +
-  RelativeTime = (ahora () | DATETIME) ((+ | -) Duración) +
+[source]
+----
+ Duration = (Digit+ ('Y'|'MO'|'W'|'D'|'H'|'M'|'S'|'MS'|'US'|'NS'))+
+ RelativeTime = (now() | DATETIME) ((+|-) Duration)+
        
 
-** La sintaxis de la unidad de duración **
-Símbolo Significado Ejemplos de presentación
-año 1 año = 365 días 1 año
-mes mes 1 mes = 30 días 1 mes
-semana 1 semana = 7 días 1 semana
-d día 1d = 1 día 1d
-h hora 1h = 3600 segundos 1h
-m minuto 1m = 60 segundos 1m
-s segundo 1s = 1 segundo 1s
-ms milisegundo 1 ms = 1000_000 nanosegundos 1 ms
-us microsegundo 1us = 1000 nanosegundos 1us
-ns nanosegundo 1ns = 1 nanosegundo 1ns
-p.ej:
+----
 
-ahora () - 1d2h // 1 día y 2 horas antes que la hora actual del servidor
-ahora () - 1 semana // 1 semana antes de la hora actual del servidor
+*La sintaxis de la unidad de duración*
 
-Nota: Debe haber espacios a la izquierda y derecha de '+' y '-'.
+[cols="1,1,1,1"]  
+|=== 
+Símbolo 
+Significado 
+Presentacion 
+Ejemplos
+
+y
+año 
+1y=365 days
+1y
+
+mo 
+mes 
+1mo=30 days
+1mo
+
+w
+semana 
+1w=7 days 
+1w
+
+d 
+día 
+1d=1 day
+1d
+
+h 
+hora 
+1h=3600 seconds	
+1h
+
+m 
+minuto
+1m=60 seconds
+1m
+
+s 
+segundo
+1s=1 second	
+1s
+
+ms 
+milisegundo 
+1ms=1000_000 nanoseconds	
+1ms
+
+us 
+microsegundo 
+1us=1000 nanoseconds
+1us
+
+ns 
+nanosegundo 
+1ns=1 nanosecond	
+1ns
+|===
+
+P. ej.:
+
+[source]
+----
+now() - 1d2h //1 day and 2 hours earlier than the current server time
+now() - 1w //1 week earlier than the current server time
+----
+
+[NOTE]
+====
+Debe haber espacios a la izquierda y derecha de '+' y '-'.
+====
