@@ -1,1 +1,1 @@
-# ceos-manual-de-usuario-iotdb
+# ceos-guia-de-usuario-de-iotdb
