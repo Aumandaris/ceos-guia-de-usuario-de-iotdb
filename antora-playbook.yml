@@ -6,7 +6,7 @@ content:
   - url: https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb.git
 ui:
   bundle: 
-    url: https://github.com/Aumandaris/ceos-grafana-docs/releases/download/1.0/paquete-interfaz-grafana.zip
+    url: https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/releases/download/v1.0/paquete-interfaz-guia-iotdb.zip
     snapshot: true
   supplemental_files:
   - path: ui.yml

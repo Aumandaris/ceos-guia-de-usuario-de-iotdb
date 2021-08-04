@@ -30,7 +30,7 @@ Guía de Usuario de IoTDB (V0.12.x)
     ** xref:lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.adoc[DML (Lenguaje de Manipulación de Datos)]
         ** xref:lenguaje-iotdb-sql/comando-de-mantenimiento.adoc[Comando de Mantenimiento]
 
-API
+API (Interfaz de Programación de Aplicaciones)
      JDBC
      API Nativa
      Otros Idiomas
