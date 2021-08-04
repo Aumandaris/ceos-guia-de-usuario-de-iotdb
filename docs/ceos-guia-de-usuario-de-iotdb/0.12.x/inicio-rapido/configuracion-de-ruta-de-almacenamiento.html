@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Archivos :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="100">
+        <span>| Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Inicio Rápido</li>
+    <li><a href="configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/inicio-rapido/configuracion-de-ruta-de-almacenamiento.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Archivos</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>En IoTDB, es necesario almacenar muchos tipos de datos. Esta sección presenta la estrategia de almacenamiento de datos de IoTDB para proporcionarle una comprensión explícita de la gestión de datos de IoTDB.</p>
+</div>
+<div class="paragraph">
+<p>Los datos en IoTDB se dividen en tres categorías, a saber, archivos de datos, archivos del sistema y archivos de registro de preescritura.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_archivos_de_datos"><a class="anchor" href="#_archivos_de_datos"></a>Archivos de Datos</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Los archivos de datos almacenan todos los datos que el usuario escribió en IoTDB, que contiene TsFile y otros archivos. El directorio de almacenamiento TsFile se puede configurar con el elemento de configuración <code>data_dirs</code> (consulte la [capa de archivo] para obtener más detalles). Se pueden configurar otros archivos a través del elemento de configuración [data_dirs] (consulte [Capa de Motor] para obtener más detalles).</p>
+</div>
+<div class="paragraph">
+<p>Para soportar mejor los requisitos de almacenamiento de los usuarios, como la expansión del espacio en disco, IoTDB admite varios métodos de almacenamiento de directorios de archivos para la configuración de almacenamiento de TsFile. Los usuarios pueden establecer múltiples rutas de almacenamiento como ubicaciones de almacenamiento de datos (consulte el elemento de configuración [data_dirs]) y usted puede especificar o personalizar la estrategia de selección de directorio (consulte el elemento de configuración [multi_dir_strategy] para obtener más detalles).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_archivos_del_sistema"><a class="anchor" href="#_archivos_del_sistema"></a>Archivos del Sistema</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Los archivos del sistema incluyen archivos de esquema, que almacenan información de metadatos de datos en IoTDB. Se puede configurar a través del elemento de configuración <code>base_dir</code> (consulte [Capa de Sistema] para obtener más detalles).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_archivos_de_registro_de_preescritura"><a class="anchor" href="#_archivos_de_registro_de_preescritura"></a>Archivos de Registro de Preescritura</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Los archivos de registro de preescritura almacenan archivos WAL. Se puede configurar a través del elemento de configuración <code>wal_dir</code> (consulte [Capa de Sistema] para obtener más detalles).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ejemplo_de_configuración_del_directorio_de_almacenamiento_de_datos"><a class="anchor" href="#_ejemplo_de_configuración_del_directorio_de_almacenamiento_de_datos"></a>Ejemplo de Configuración del Directorio de almacenamiento de Datos</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Para una comprensión más clara de la configuración del directorio de almacenamiento de datos, daremos un ejemplo en esta sección.</p>
+</div>
+<div class="paragraph">
+<p>La ruta del directorio de datos incluida en la configuración del directorio de almacenamiento es: base_dir, data_dirs, multi_dir_strategy y wal_dir, que se refieren a archivos del sistema, carpetas de datos, estrategia de almacenamiento y archivos de registro de preescritura.</p>
+</div>
+<div class="paragraph">
+<p>Un ejemplo de los elementos de configuración son los siguientes:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>base_dir = $IOTDB_HOME/data
+data_dirs = /data1/data, /data2/data, /data3/data
+multi_dir_strategy=MaxDiskUsableSpaceFirstStrategy
+wal_dir= $IOTDB_HOME/data/wal</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Después de establecer la configuración, el sistema:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Guarde todos los archivos del sistema en $ IOTDB_HOME / data</p>
+</li>
+<li>
+<p>Guarde TsFile en /data1/data, /data2/data, /data3/data. Y la estrategia de elección es <code>MaxDiskUsableSpaceFirstStrategy</code>, cuando los datos se escriben en el disco, el sistema seleccionará automáticamente un directorio con el mayor espacio de disco restante para escribir datos.</p>
+</li>
+<li>
+<p>Guarde los datos de WAL en $IOTDB_HOME/data/wal</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

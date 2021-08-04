@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="100">
+        <span>| Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/api-interfaz-de-programacion-de-aplicaciones/api-nativa.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p>API nativa de Java
+#
+Dependencias</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>JDK&gt; = 1.8
+Maven&gt; = 3.6</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>#
+Instalación</p>
+</div>
+<div class="paragraph">
+<p>En el directorio raíz:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mvn instalación limpia -pl sesión -am -DskipTests</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>#
+Uso de la API nativa de Java de IoTDB con Maven</p>
+</div>
+<div class="paragraph">
+<p>&lt;dependencias&gt;
+    &lt;dependencia&gt;
+      &lt;groupId&gt; org.apache.iotdb &lt;/groupId&gt;
+      &lt;artifactId&gt; sesión de iotdb &lt;/artifactId&gt;
+      &lt;versión&gt; 0.12.0 &lt;/version&gt;
+    &lt;/dependencia&gt;
+&lt;/dependencias&gt;</p>
+</div>
+<div class="paragraph">
+<p>#
+API nativas</p>
+</div>
+<div class="paragraph">
+<p>Aquí mostramos las interfaces de uso común y sus parámetros en la API nativa:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Inicializar una sesión</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Sesión (String host, int rpcPort)</p>
+</div>
+<div class="paragraph">
+<p>Sesión (cadena de host, cadena rpcPort, cadena de nombre de usuario, cadena de contraseña)</p>
+</div>
+<div class="paragraph">
+<p>Sesión (String host, int rpcPort, String username, String contraseña)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Abrir una sesión</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Session.open ()</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Cerrar una sesión</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Session.close ()</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Establecer grupo de almacenamiento</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void setStorageGroup (String storageGroupId)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Eliminar uno o varios grupos de almacenamiento</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void deleteStorageGroup (String storageGroup)
+void deleteStorageGroups (List &lt;String&gt; storageGroups)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Crea una o varias series temporales</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void createTimeseries (Ruta de cadena, TSDataType dataType,
+      Codificación TSEncoding, compresor CompressionType, accesorios Map &lt;String, String&gt;,
+      Etiquetas Map &lt;String, String&gt;, atributos Map &lt;String, String&gt;, String MeasureAlias)</p>
+</div>
+<div class="paragraph">
+<p>void createMultiTimeseries (List &lt;String&gt; rutas, List &lt;TSDataType&gt; dataTypes,
+      Lista &lt;TSEncoding&gt; codificaciones, Lista &lt;CompressionType&gt; compresores,
+      Lista &lt;Mapa &lt;Cadena, Cadena &gt;&gt; propsList, Lista &lt;Mapa &lt;Cadena, Cadena &gt;&gt; tagsList,
+      List &lt;Map &lt;String, String &gt;&gt; attributeList, List &lt;String&gt; mediciónAliasList)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Eliminar una o varias series temporales</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void deleteTimeseries (ruta de cadena)
+void deleteTimeseries (List &lt;String&gt; rutas)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Eliminar datos antes o iguales a una marca de tiempo de una o varias series de tiempo</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void deleteData (ruta de cadena, tiempo largo)
+void deleteData (List &lt;String&gt; rutas, mucho tiempo)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Insertar un registro, que contiene varios valores de medición de un dispositivo en una marca de tiempo. Sin la información de tipos, el servidor tiene que realizar una inferencia de tipos, lo que puede costar algo de tiempo.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void insertRecord (String deviceId, largo tiempo, List &lt;String&gt; medidas, List &lt;String&gt; valores)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Inserte una tableta, que son varias filas de un dispositivo, cada fila tiene las mismas medidas</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void insertTablet (tableta)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Insertar múltiples tabletas</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void insertTablets (tableta Map &lt;String, Tablet&gt;)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Insertar varios registros. Sin la información de tipos, el servidor tiene que realizar una inferencia de tipos, lo que puede costar algo de tiempo.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void insertRecords (List &lt;String&gt; deviceIds, List &lt;Long&gt; veces,
+                   List &lt;List &lt;String&gt;&gt; medicionesList, List &lt;List &lt;String&gt;&gt; valuesList)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Insertar un registro, que contiene varios valores de medición de un dispositivo en una marca de tiempo. Con la información de tipos, el servidor no necesita hacer inferencias de tipos, lo que conduce a un mejor rendimiento.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void insertRecord (String deviceId, largo tiempo, List &lt;String&gt; medidas,
+   List &lt;TSDataType&gt; tipos, List &lt;Object&gt; valores)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Insertar varios registros. Con la información de tipos, el servidor no necesita hacer inferencias de tipos, lo que conduce a un mejor rendimiento.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void insertRecords (List &lt;String&gt; deviceIds, List &lt;Long&gt; veces,
+    List &lt;List &lt;String&gt;&gt; actionsList, List &lt;List &lt;TSDataType&gt;&gt; typesList,
+    Lista &lt;Lista &lt;Objeto&gt;&gt; lista de valores)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Inserte varios registros que pertenezcan al mismo dispositivo. Con la información de tipos, el servidor no necesita hacer inferencias de tipos, lo que conduce a un mejor rendimiento.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void insertRecordsOfOneDevice (String deviceId, List &lt;Long&gt; veces,
+    List &lt;List &lt;String&gt;&gt; actionsList, List &lt;List &lt;TSDataType&gt;&gt; typesList,
+    Lista &lt;Lista &lt;Objeto&gt;&gt; lista de valores)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Consulta de datos brutos. El intervalo de tiempo incluye startTime y excluye endTime</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>SessionDataSet executeRawDataQuery (List &lt;String&gt; rutas, startTime largo, endTime largo)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Ejecutar declaración de consulta</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>SessionDataSet executeQueryStatement (String sql)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Ejecutar declaración sin consulta</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void executeNonQueryStatement (String sql)</p>
+</div>
+<div class="paragraph">
+<p>#
+API nativas para perfilar el costo de la red</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Pruebe el costo de la red y del cliente de insertRecords. Este método NO inserta datos en la base de datos y el servidor simplemente regresa después de aceptar la solicitud, este método debe usarse para probar otros costos de tiempo en el cliente</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void testInsertRecords (List &lt;String&gt; deviceIds, List &lt;Long&gt; veces,
+              List &lt;List &lt;String&gt;&gt; medicionesList, List &lt;List &lt;String&gt;&gt; valuesList)</p>
+</div>
+<div class="paragraph">
+<p>o</p>
+</div>
+<div class="paragraph">
+<p>void testInsertRecords (List &lt;String&gt; deviceIds, List &lt;Long&gt; veces,
+    List &lt;List &lt;String&gt;&gt; actionsList, List &lt;List &lt;TSDataType&gt;&gt; typesList,
+    Lista &lt;Lista &lt;Objeto&gt;&gt; lista de valores)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Pruebe la red y el costo del cliente de insertRecordsOfOneDevice. Este método NO inserta datos en la base de datos y el servidor simplemente regresa después de aceptar la solicitud, este método debe usarse para probar otros costos de tiempo en el cliente</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>void testInsertRecordsOfOneDevice (String deviceId, List &lt;Long&gt; veces,
+    List &lt;List &lt;String&gt;&gt; actionsList, List &lt;List &lt;TSDataType&gt;&gt; typesList,
+    Lista &lt;Lista &lt;Objeto&gt;&gt; lista de valores)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Pruebe la red y el costo del cliente de insertRecord. Este método NO inserta datos en la base de datos y el servidor simplemente regresa después de aceptar la solicitud, este método debe usarse para probar otros costos de tiempo en el cliente</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>prueba vacía rtRecord (String deviceId, largo tiempo, List &lt;String&gt; medidas, List &lt;String&gt; valores)</p>
+</div>
+<div class="paragraph">
+<p>o</p>
+</div>
+<div class="paragraph">
+<p>void testInsertRecord (String deviceId, largo tiempo, List &lt;String&gt; mediciones,
+    List &lt;TSDataType&gt; tipos, List &lt;Object&gt; valores)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Pruebe la red y el costo del cliente de insertTablet. Este método NO inserta datos en la base de datos y el servidor simplemente regresa después de aceptar la solicitud, este método debe usarse para probar otros costos de tiempo en el cliente</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>prueba de vacíoInsertTablet (tableta)</p>
+</div>
+<div class="paragraph">
+<p>#
+Ejemplo de codificación</p>
+</div>
+<div class="paragraph">
+<p>Para obtener más información de las siguientes interfaces, consulte session / src / main / java / org / apache / iotdb / session / Session.java</p>
+</div>
+<div class="paragraph">
+<p>El código de muestra del uso de estas interfaces se encuentra en example / session / src / main / java / org / apache / iotdb / SessionExample.java, que proporciona un ejemplo de cómo abrir una sesión de IoTDB, ejecutar una inserción por lotes.
+#
+Grupo de sesiones para API nativa</p>
+</div>
+<div class="paragraph">
+<p>Proporcionamos un grupo de conexiones (`SessionPool) para la API nativa. Usando la interfaz, necesita definir el tamaño de la piscina.</p>
+</div>
+<div class="paragraph">
+<p>Si no puede obtener una conexión de sesión en 60 segundos, hay un registro de advertencia, pero el programa se bloqueará.</p>
+</div>
+<div class="paragraph">
+<p>Si una sesión ha finalizado una operación, se volverá a poner en el grupo automáticamente. Si se interrumpe la conexión de una sesión, la sesión se eliminará automáticamente y el grupo intentará crear una nueva sesión y rehacer la operación.</p>
+</div>
+<div class="paragraph">
+<p>Para operaciones de consulta:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Cuando se usa SessionPool para consultar datos, el conjunto de resultados es SessionDataSetWrapper;
+Dado un SessionDataSetWrapper, si no ha escaneado todos los datos que contiene y deja de usarlo, debe llamar a SessionPool.closeResultSet (envoltorio) manualmente;
+Cuando llama a hasNext () y next () de un SessionDataSetWrapper y hay una excepción, entonces debe llamar a SessionPool.closeResultSet (envoltorio) manualmente;
+Puede llamar a getColumnNames () de SessionDataSetWrapper para obtener los nombres de columna del resultado de la consulta;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ejemplos: session / src / test / java / org / apache / iotdb / session / pool / SessionPoolTest.java</p>
+</div>
+<div class="paragraph">
+<p>O ejemplo / session / src / main / java / org / apache / iotdb / SessionPoolExample.java
+#
+Nuevas interfaces</p>
+</div>
+<div class="paragraph">
+<p>void abierto (booleano enableRPCCompression)</p>
+</div>
+<div class="paragraph">
+<p>Abra una sesión, con un parámetro para especificar si habilitar la compresión RPC. Preste atención a que este estado de compresión RPC del cliente debe cumplir con el estado del servidor IoTDB</p>
+</div>
+<div class="paragraph">
+<p>void insertRecord (String deviceId, largo tiempo, List &lt;String&gt; medidas,
+      List &lt;TSDataType&gt; tipos, List &lt;Object&gt; valores)</p>
+</div>
+<div class="paragraph">
+<p>Inserte un registro, de manera que el usuario tenga que proporcionar la información de tipo de cada medición, que es diferente de la interfaz original insertRecord (). Los valores deben proporcionarse en sus tipos primitivos. Esta interfaz es más competente que la que no tiene parámetros de tipo.</p>
+</div>
+<div class="paragraph">
+<p>void insertRecords (List &lt;String&gt; deviceIds, List &lt;Long&gt; veces, List &lt;List &lt;String&gt;&gt; MeasuringList,
+                   List &lt;List &lt;TSDataType&gt;&gt; typesList, List &lt;List &lt;Object&gt;&gt; valuesList)</p>
+</div>
+<div class="paragraph">
+<p>Inserte varios registros con parámetros de tipo. Esta interfaz es más competente que la que no tiene parámetros de tipo.</p>
+</div>
+<div class="paragraph">
+<p>void insertTablet (tableta, ordenado por booleano)</p>
+</div>
+<div class="paragraph">
+<p>Una interfaz insertTablet () adicional que proporciona un parámetro "ordenado" que indica si la tableta está en orden. Una tableta clasificada puede acelerar el proceso de inserción.</p>
+</div>
+<div class="paragraph">
+<p>void insertTablets (Map &lt;String, Tablet&gt; tabletas)</p>
+</div>
+<div class="paragraph">
+<p>Un nuevo insertTablets () para insertar varias tabletas.</p>
+</div>
+<div class="paragraph">
+<p>void insertTablets (Tabletas Map &lt;String, Tablet&gt;, ordenadas de forma booleana)</p>
+</div>
+<div class="paragraph">
+<p>insertTablets () con un parámetro adicional "ordenado".</p>
+</div>
+<div class="paragraph">
+<p>void testInsertRecord (String deviceId, long time, List &lt;String&gt; medidas, List &lt;TSDataType&gt; tipos,
+                      Lista de valores de &lt;Objeto&gt;)
+void testInsertRecords (List &lt;String&gt; deviceIds, List &lt;Long&gt; veces, List &lt;List &lt;String&gt;&gt; MeasuringList,
+                      List &lt;List &lt;TSDataType&gt;&gt; typesList, List &lt;List &lt;Object&gt;&gt; valuesList)
+void testInsertTablet (tableta, ordenado de forma booleana)
+void testInsertTablets (Map &lt;String, Tablet&gt; tabletas)
+void testInsertTablets (Map &lt;String, Tablet&gt; tabletas, ordenadas por booleano)</p>
+</div>
+<div class="paragraph">
+<p>Las interfaces anteriores se agregaron recientemente para probar la capacidad de respuesta de las nuevas interfaces de inserción.</p>
+</div>
+<div class="paragraph">
+<p>void createTimeseries (ruta de cadena, TSDataType dataType, codificación TSEncoding, compresor CompressionType,
+                      Map &lt;String, String&gt; props, Map &lt;String, String&gt; etiquetas, atributos Map &lt;String, String&gt;,
+                      Medición de cadenas Alias)</p>
+</div>
+<div class="paragraph">
+<p>Cree una serie temporal con ruta, tipo de datos, codificación y compresión. Además, los usuarios pueden proporcionar accesorios, etiquetas, atributos y alias de medición。</p>
+</div>
+<div class="paragraph">
+<p>void createMultiTimeseries (List &lt;String&gt; rutas, List &lt;TSDataType&gt; dataTypes, List &lt;TSEncoding&gt; codificaciones,
+                           List &lt;CompressionType&gt; compresores, List &lt;Map &lt;String, String &gt;&gt; propsList,
+                           Lista &lt;Mapa &lt;Cadena, Cadena &gt;&gt; tagsList, Lista &lt;Mapa &lt;Cadena, Cadena &gt;&gt; attributeList,
+                           List &lt;String&gt; MeasureAliasList)</p>
+</div>
+<div class="paragraph">
+<p>Crea múltiples series temporales con un solo método. Los usuarios pueden proporcionar accesorios, etiquetas, atributos y alias de medición, así como información detallada sobre series de tiempo.</p>
+</div>
+<div class="paragraph">
+<p>boolean checkTimeseriesExists (ruta de cadena)</p>
+</div>
+<div class="paragraph">
+<p>Agregue un método para verificar si elExiste una serie temporal específica.</p>
+</div>
+<div class="paragraph">
+<p>Sesión pública (String host, int rpcPort, String username, String contraseña,
+       boolean isEnableCacheLeader)</p>
+</div>
+<div class="paragraph">
+<p>Abre una sesión y especifica si la caché de Leader está habilitada. Tenga en cuenta que esta interfaz mejora el rendimiento para IoTDB distribuido, pero agrega menos costos para el cliente para IoTDB independiente.</p>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
