@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Comando de Mantenimiento :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/lenguaje-iotdb-sql/comando-de-mantenimiento.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Lenguaje IoTDB-SQL</li>
+    <li><a href="comando-de-mantenimiento.html">Comando de Mantenimiento</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/lenguaje-iotdb-sql/comando-de-mantenimiento.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Comando de Mantenimiento</h1>
+<div class="sect1">
+<h2 id="_flush"><a class="anchor" href="#_flush"></a>FLUSH</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Conserve todos los puntos de datos de la tabla de memoria del grupo de almacenamiento en el disco y selle el archivo de datos.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; FLUSH
+IoTDB&gt; FLUSH root.ln
+IoTDB&gt; FLUSH root.sg1,root.sg2</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_merge"><a class="anchor" href="#_merge"></a>MERGE</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Fusionar datos secuenciados y no secuenciados. Actualmente, IoTDB admite los siguientes dos tipos de SQL para activar manualmente el proceso de combinación de archivos de datos:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>MERGE</code> Solo reescribe fragmentos superpuestos, la velocidad de fusión es rápida, mientras que eventualmente habrá datos redundantes en el disco.</p>
+</li>
+<li>
+<p><code>FULL MERGE</code> Reescribe todos los datos en archivos superpuestos, la velocidad de fusión es lenta, pero eventualmente no habrá datos redundantes en el disco.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; MERGE
+IoTDB&gt; FULL MERGE</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_clear_caché"><a class="anchor" href="#_clear_caché"></a>CLEAR CACHÉ</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Borre la caché de fragmentos, metadatos de fragmentos y metadatos de series temporales para liberar la huella de memoria.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; CLEAR CACHE</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_schema_snapshot"><a class="anchor" href="#_schema_snapshot"></a>SCHEMA SNAPSHOT</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Para acelerar el reinicio de IoTDB, los usuarios pueden crear una instantánea del esquema y evitar recuperar el esquema del archivo mlog.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; CREATE SNAPSHOT FOR SCHEMA</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kill_query"><a class="anchor" href="#_kill_query"></a>KILL QUERY</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Al usar IoTDB, puede encontrar las siguientes situaciones: ha ingresado una declaración de consulta, pero no puede obtener el resultado durante mucho tiempo, ya que esta consulta contiene demasiados datos o algunas otras razones, y tiene que esperar hasta que finalice la consulta. Desde la versión 0.12, IoTDB ha proporcionado dos soluciones para consultas con un tiempo de ejecución prolongado: query timeout y query abort.</p>
+</div>
+<div class="sect2">
+<h3 id="_query_timeout"><a class="anchor" href="#_query_timeout"></a>Query Timeout</h3>
+<div class="paragraph">
+<p>Para las consultas que tardan demasiado en ejecutarse, IoTDB interrumpirá por la fuerza la consulta y generará una excepción de tiempo de espera, como se muestra en la figura:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; select * from root;
+Msg: 701 Current query is time out, please check your statement or modify timeout parameter.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>El tiempo de espera predeterminado del sistema es 60000 ms, que se puede personalizar en el archivo de configuración mediante el parámetro <code>query_timeout_threshold</code>.</p>
+</div>
+<div class="paragraph">
+<p>Si usa JDBC o Session, también admitimos establecer un tiempo de espera para una sola consulta （Unidad: ms） ：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>E.g. ((IoTDBStatement) statement).executeQuery(String sql, long timeoutInMS)
+E.g. session.executeQueryStatement(String sql, long timeout)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si el parámetro de tiempo de espera no está configurado o tiene el valor 0, se utilizará el tiempo de espera predeterminado.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_query_abort"><a class="anchor" href="#_query_abort"></a>Query Abort</h3>
+<div class="paragraph">
+<p>Además de esperar a que se agote el tiempo de espera de la consulta de forma pasiva, IoTDB también admite detener la consulta de forma activa:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>KILL QUERY &lt;queryId&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Puede cancelar la consulta especificada especificando <code>queryId</code>. Si no se especifica <code>queryId</code>, se eliminarán todas las consultas en ejecución.</p>
+</div>
+<div class="paragraph">
+<p>Para obtener el <code>queryId</code> en ejecución, puede usar el comando <code>show query processlist,</code> que mostrará la lista de todas las consultas en ejecución, con el siguiente conjunto de resultados:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiempo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">queryId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Declaración</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>La longitud máxima de visualización de la declaración es de 64 caracteres. Para declaraciones con más de 64 caracteres, se mostrará la parte interceptada.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

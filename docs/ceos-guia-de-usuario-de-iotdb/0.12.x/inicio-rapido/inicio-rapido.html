@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Inicio Rápido :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/inicio-rapido/inicio-rapido.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Inicio Rápido</li>
+    <li><a href="inicio-rapido.html">Inicio Rápido</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/inicio-rapido/inicio-rapido.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Inicio Rápido</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Este breve manual lo guiará a través del proceso básico de uso de IoTDB. Para obtener una guía más completa, visite el <a href="../introduccion-a-iotdb/que-es-iotdb.html" class="page">Manual de Usuario</a> de nuestro sitio web.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisitos"><a class="anchor" href="#_prerequisitos"></a>Prerequisitos</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Para usar IoTDB, debe tener:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Java &gt;= 1.8 (Asegúrese de que se haya establecido la ruta del entorno)</p>
+</li>
+<li>
+<p>Establezca el número máximo de archivos abiertos como 65535 para evitar el problema de "demasiados archivos abiertos".</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_instalación"><a class="anchor" href="#_instalación"></a>Instalación</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IoTDB le proporciona tres métodos de instalación, puede consultar las siguientes sugerencias, elija una de ellas:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Instalación desde código fuente. Si necesita modificar el código usted mismo, puede utilizar este método.</p>
+</li>
+<li>
+<p>Instalación desde archivos binarios. Descargue los archivos binarios del sitio web oficial. Este es el método recomendado, en el que obtendrá un paquete binario publicado que está listo para usar (Próximamente&#8230;&#8203;)</p>
+</li>
+<li>
+<p>Usando Docker: la ruta al dockerfile es <a href="https://github.com/apache/iotdb/blob/master/docker/src/main" class="bare">https://github.com/apache/iotdb/blob/master/docker/src/main</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_descargar"><a class="anchor" href="#_descargar"></a>Descargar</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Puede descargar el archivo binario desde: <a href="https://iotdb.apache.org/Download/">Página de Descarga</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuraciones"><a class="anchor" href="#_configuraciones"></a>Configuraciones</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Los archivos de configuración están en la carpeta "conf"</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>módulo de configuración de entorno (<code>iotdb-env.bat</code>, <code>iotdb-env.sh</code>),</p>
+</li>
+<li>
+<p>módulo de configuración del sistema (<code>iotdb-engine.properties</code>)</p>
+</li>
+<li>
+<p>módulo de configuración de registro (<code>logback.xml</code>).</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Para obtener más información, consulte <a href="https://iotdb.apache.org/UserGuide/V0.12.x/Appendix/Config-Manual.html">Configuración</a> en detalle.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_iniciar"><a class="anchor" href="#_iniciar"></a>Iniciar</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Puede seguir el siguiente paso para probar la instalación, si no hay ningún error después de la ejecución, la instalación está completa.</p>
+</div>
+<div class="sect2">
+<h3 id="_iniciar_iotdb"><a class="anchor" href="#_iniciar_iotdb"></a>Iniciar IoTDB</h3>
+<div class="paragraph">
+<p>Los usuarios pueden iniciar IoTDB mediante la  secuencia de comandos de inicio del servidor en la carpeta sbin.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code># Unix/OS X
+&gt; nohup sbin/start-server.sh &gt;/dev/null 2&gt;&amp;1 &amp;
+or
+&gt; nohup sbin/start-server.sh -c &lt;conf_path&gt; -rpc_port &lt;rpc_port&gt; &gt;/dev/null 2&gt;&amp;1 &amp;
+
+# Windows
+&gt; sbin\start-server.bat -c &lt;conf_path&gt; -rpc_port &lt;rpc_port&gt;</code></pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>"-c" y "-rpc_port" son opcionales.</p>
+</li>
+<li>
+<p>La opción "-c" especifica el directorio del archivo de configuración del sistema.</p>
+</li>
+<li>
+<p>La opción "-rpc_port" especifica el puerto rpc.</p>
+</li>
+<li>
+<p>Si se especifican ambas opciones, <em>rpc_port</em> anulará rpc_port en <em>conf_path</em>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Si desea utilizar JMX para conectar IOTDB, es posible que deba agregar</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>-Dcom.sun.management.jmxremote.rmi.port=PORT -Djava.rmi.server.hostname=IP</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>a $IOTDB_JMX_OPTS en iotdb-env.sh. o iotdb-env.bat</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_utilizar_cli"><a class="anchor" href="#_utilizar_cli"></a>Utilizar Cli</h3>
+<div class="paragraph">
+<p>IoTDB ofrece diferentes formas de interactuar con el servidor, aquí presentamos los pasos básicos del uso de la herramienta Cli para insertar y consultar datos.</p>
+</div>
+<div class="paragraph">
+<p>Después de instalar IoTDB, hay un usuario predeterminado 'root', su contraseña predeterminada también es 'root'. Los usuarios pueden usar este usuario predeterminado para iniciar sesión en Cli para usar IoTDB. La secuencia de comandos de inicio de Cli es la secuencia de comandos start-cli en la carpeta sbin. Al ejecutar la secuencia de comandos, el usuario debe asignar IP, PUERTO, USER_NAME y CONTRASEÑA. Los parámetros predeterminados son "-h 127.0.0.1 -p 6667 -u root -pw -root".</p>
+</div>
+<div class="paragraph">
+<p>Aquí está el comando para iniciar Cli:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code># Unix/OS X
+&gt; sbin/start-cli.sh -h 127.0.0.1 -p 6667 -u root -pw root
+
+# Windows
+&gt; sbin\start-cli.bat -h 127.0.0.1 -p 6667 -u root -pw root</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>El cliente de línea de comandos es interactivo, por lo que si todo está listo, debería ver el logotipo de bienvenida y las declaraciones:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code> _____       _________  ______   ______
+|_   _|     |  _   _  ||_   _ `.|_   _ \
+  | |   .--.|_/ | | \_|  | | `. \ | |_) |
+  | | / .'`\ \  | |      | |  | | |  __'.
+ _| |_| \__. | _| |_    _| |_.' /_| |__) |
+|_____|'.__.' |_____|  |______.'|_______/  version x.x.x
+
+
+IoTDB&gt; login successfully
+IoTDB&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_comandos_básicos_para_iotdb"><a class="anchor" href="#_comandos_básicos_para_iotdb"></a>Comandos básicos para IoTDB</h3>
+<div class="paragraph">
+<p>Ahora, vamos a presentar la forma de crear series temporales, insertar datos y consultar datos.</p>
+</div>
+<div class="paragraph">
+<p>Los datos en IoTDB están organizados como series de tiempo, en cada serie de tiempo hay algunos pares de datos y tiempo, y cada serie de tiempo es propiedad de un grupo de almacenamiento. Antes de definir una serie temporal, debemos definir un grupo de almacenamiento usando SET STORAGE GROUP, y aquí hay un ejemplo:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; SET STORAGE GROUP TO root.ln</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>También podemos usar SHOW STORAGE GROUP para verificar el grupo de almacenamiento creado:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; SHOW STORAGE GROUP
++-----------------------------------+
+|                      Storage Group|
++-----------------------------------+
+|                            root.ln|
++-----------------------------------+
+storage group number = 1</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Una vez configurado el grupo de almacenamiento, podemos usar CREATE TIMESERIES para crear nuevas series de tiempo. Cuando creamos una serie temporal, debemos definir su tipo de datos y el esquema de codificación. Creamos dos series temporales de la siguiente manera:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; CREATE TIMESERIES root.ln.wf01.wt01.status WITH DATATYPE=BOOLEAN, ENCODING=PLAIN
+IoTDB&gt; CREATE TIMESERIES root.ln.wf01.wt01.temperature WITH DATATYPE=FLOAT, ENCODING=RLE</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Para consultar las series temporales específicas, use SHOW TIMESERIES &lt;Path&gt;. &lt;Path&gt; representa la ruta de la serie temporal. Su valor predeterminado es nulo, lo que significa consultar todas las series temporales del sistema (lo mismo que usar "SHOW TIMESERIES root"). Aquí están los ejemplos:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Consultar todas las series temporales del sistema:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; SHOW TIMESERIES
++-------------------------------+---------------+--------+--------+
+|                     Timeseries|  Storage Group|DataType|Encoding|
++-------------------------------+---------------+--------+--------+
+|       root.ln.wf01.wt01.status|        root.ln| BOOLEAN|   PLAIN|
+|  root.ln.wf01.wt01.temperature|        root.ln|   FLOAT|     RLE|
++-------------------------------+---------------+--------+--------+
+Total timeseries number = 2</code></pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>onsultar una serie temporal específica (root.ln.wf01.wt01.status):</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; SHOW TIMESERIES root.ln.wf01.wt01.status
++------------------------------+--------------+--------+--------+
+|                    Timeseries| Storage Group|DataType|Encoding|
++------------------------------+--------------+--------+--------+
+|      root.ln.wf01.wt01.status|       root.ln| BOOLEAN|   PLAIN|
++------------------------------+--------------+--------+--------+
+Total timeseries number = 1</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Insertar datos de series de tiempo es la operación básica de IoTDB, puede usar el comando "INSERT" para finalizar esto. Antes de insertar, debe asignar la marca de tiempo y el nombre de la ruta del sufijo:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; INSERT INTO root.ln.wf01.wt01(timestamp,status) values(100,true);
+IoTDB&gt; INSERT INTO root.ln.wf01.wt01(timestamp,status,temperature) values(200,false,20.71)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Los datos que acabamos de insertar se muestran así:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; SELECT status FROM root.ln.wf01.wt01
++-----------------------+------------------------+
+|                   Time|root.ln.wf01.wt01.status|
++-----------------------+------------------------+
+|1970-01-01T08:00:00.100|                    true|
+|1970-01-01T08:00:00.200|                   false|
++-----------------------+------------------------+
+Total line number = 2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>También podemos consultar varios datos de series temporales a la vez de esta manera:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; SELECT * FROM root.ln.wf01.wt01
++-----------------------+--------------------------+-----------------------------+
+|                   Time|  root.ln.wf01.wt01.status|root.ln.wf01.wt01.temperature|
++-----------------------+--------------------------+-----------------------------+
+|1970-01-01T08:00:00.100|                      true|                         null|
+|1970-01-01T08:00:00.200|                     false|                        20.71|
++-----------------------+--------------------------+-----------------------------+
+Total line number = 2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Los comandos para salir del Cli son:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; quit
+or
+IoTDB&gt; exit</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Para obtener más información sobre qué comandos son compatibles con IoTDB SQL, consulte <a href="https://iotdb.apache.org/UserGuide/V0.12.x/Appendix/SQL-Reference.html">Referencia de SQL</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_detener_iotdb"><a class="anchor" href="#_detener_iotdb"></a>Detener IoTDB</h3>
+<div class="paragraph">
+<p>El servidor se puede detener con ctrl+C o la siguiente secuencia de comandos:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code># Unix/OS X
+&gt; sbin/stop-server.sh
+
+# Windows
+&gt; sbin\stop-server.bat</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuración_básica"><a class="anchor" href="#_configuración_básica"></a>Configuración básica</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Los archivos de configuración se encuentran en la carpeta <code>conf</code>, incluye:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>configuración del entorno (<code>iotdb-env.bat</code>, <code>iotdb-env.sh</code>),</p>
+</li>
+<li>
+<p>configuración del sistema (<code>iotdb-engine.properties</code>)</p>
+</li>
+<li>
+<p>configuración de registro (<code>logback.xml</code>).</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
