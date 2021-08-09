@@ -28,13 +28,14 @@ Guía de Usuario de IoTDB (V0.12.x)
 * Lenguaje IoTDB-SQL
     ** xref:lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.adoc[DDL (Lenguaje de Definición de Datos)]
     ** xref:lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.adoc[DML (Lenguaje de Manipulación de Datos)]
-        ** xref:lenguaje-iotdb-sql/comando-de-mantenimiento.adoc[Comando de Mantenimiento]
+	** xref:lenguaje-iotdb-sql/comando-de-mantenimiento.adoc[Comando de Mantenimiento]
 
-API (Interfaz de Programación de Aplicaciones)
-     JDBC
-     API Nativa
-     Otros Idiomas
-     API TsFile
+* API (Interfaz de Programación de Aplicaciones)
+     ** xref:api-interfaz-de-programacion-de-aplicaciones/jdbc.adoc[JDBC]
+     ** xref:api-interfaz-de-programacion-de-aplicaciones/api-nativa.adoc[API Nativa]     
+     ** xref:api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.adoc[Otros Lenguajes]     
+     ** xref:api-interfaz-de-programacion-de-aplicaciones/api-tsfile.adoc[API TsFile]     
+
 UDF
      UDF (Función Definida por el Usuario)
 Protocolo de Servicio de Comunicación
