@@ -36,11 +36,13 @@ Guía de Usuario de IoTDB (V0.12.x)
      ** xref:api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.adoc[Otros Lenguajes]     
      ** xref:api-interfaz-de-programacion-de-aplicaciones/api-tsfile.adoc[API TsFile]     
 
-UDF
-     UDF (Función Definida por el Usuario)
-Protocolo de Servicio de Comunicación
-     Ahorro
-     MQTT
+* UDF (Función Definida por el Usuario)
+     ** xref:udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.adoc[Función Definida por el Usuario] 
+     
+* Protocolo de Servicio de Comunicación
+     ** xref:protocolo-de-servicio-de-comunicacion/thrift.adoc[Thrift]
+     ** xref:protocolo-de-servicio-de-comunicacion/mqtt.adoc[MQTT]
+
 Herramientas de Sistema
      Cargar Archivo Ts Externo
      Herramienta de Seguimiento del Rendimiento
@@ -48,7 +50,7 @@ Herramientas de Sistema
      Herramientas de Seguimiento y Registro
      Herramienta JMX
      Herramienta MLogParser
-     Herramienta de Nodo
+     Herramienta deb Nodo
      Herramienta de Visualización del Historial de Consultas
      Herramienta de Marca de Agua
 Colaboración de Edge y Cloud
