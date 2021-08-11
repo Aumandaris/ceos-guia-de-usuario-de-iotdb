@@ -46,29 +46,29 @@ Las configuraciones son las siguientes:
 |Descripción 
 |Predeterminado
 
-`enable_mqtt_service` 
-si habilitar o no el servicio MQTT 
-`false`
+|`enable_mqtt_service` 
+|si habilitar o no el servicio MQTT 
+|`false`
 
-`mqtt_host` 
-el host de enlace del servicio MQTT 
-`0.0.0.0`
+|`mqtt_host` 
+|el host de enlace del servicio MQTT 
+|`0.0.0.0`
 
-`mqtt_port` 
-el puerto de enlace del servicio MQTT 
-`1883`
+|`mqtt_port` 
+|el puerto de enlace del servicio MQTT 
+|`1883`
 
-`mqtt_handler_pool_size` 
-el tamaño del grupo de controladores para entregar los mensajes MQTT 
-`1`
+|`mqtt_handler_pool_size` 
+|el tamaño del grupo de controladores para entregar los mensajes MQTT 
+|`1`
 
-`mqtt_payload_formatter` 
-el formateador de carga útil del mensaje MQTT 
-`json`
+|`mqtt_payload_formatter` 
+|el formateador de carga útil del mensaje MQTT 
+|`json`
 
-`mqtt_max_message_size` 
-el tamaño máximo de mensaje MQTT en bytes
-`1048576`
+|`mqtt_max_message_size` 
+|el tamaño máximo de mensaje MQTT en bytes
+|`1048576`
 |===
 
 == Ejemplos de Codificación
