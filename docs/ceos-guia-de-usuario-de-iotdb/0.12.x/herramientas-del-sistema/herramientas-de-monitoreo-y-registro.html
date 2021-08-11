@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Monitor del Sistema :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/herramientas-del-sistema/herramientas-de-monitoreo-y-registro.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li><a href="herramientas-de-monitoreo-y-registro.html">Monitor del Sistema</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/herramientas-del-sistema/herramientas-de-monitoreo-y-registro.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Monitor del Sistema</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Actualmente, IoTDB proporciona a los usuarios la herramienta JConsole de Java para monitorear el estado del sistema o usar la API abierta de IoTDB para verificar el estado de los datos.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_monitoreo_del_estado_del_sistema"><a class="anchor" href="#_monitoreo_del_estado_del_sistema"></a>Monitoreo del Estado del Sistema</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Después de iniciar la herramienta JConsole y conectarse al servidor IoTDB, se proporciona una visión básica del estado del sistema IoTDB (ocupación de CPU, información en memoria, etc.). Ver [documentación oficial] para obtener más información.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_monitoreo_de_mbean_jmx"><a class="anchor" href="#_monitoreo_de_mbean_jmx"></a>Monitoreo de MBean JMX</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Al utilizar la herramienta JConsole y conectarse con JMX, se le proporcionan algunas estadísticas y parámetros del sistema.</p>
+</div>
+<div class="paragraph">
+<p>Esta sección describe cómo usar JConsole Mbeantab de jconsole para monitorear algunas configuraciones del sistema de IoTDB, las estadísticas de escritura, etc. Después de conectarse a JMX, puede encontrar el "MBean" de "org.apache.iotdb.service", como se muestra en la figura siguiente.</p>
+</div>
+<div class="paragraph">
+<p>Hay varios atributos bajo supervisión, incluido el directorio de archivos de datos, las estadísticas de escritura y los valores de algunos parámetros del sistema. También puede mostrar un gráfico de líneas de la propiedad haciendo doble clic en el valor correspondiente a la propiedad. Para obtener una descripción detallada de los atributos del monitor, consulte las siguientes secciones.</p>
+</div>
+<div class="paragraph">
+<p>Lista de atributos de MBean Monitor</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>SystemDirectory</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nombre SystemDirectory
+Descripción El directorio absoluto del archivo del sistema de datos.
+Tipo de cadena</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>DataSizeInByte</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nombre DataSizeInByte
+Descripción El tamaño total del archivo de datos.
+Byte de unidad
+Tipo largo</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>EnableStatMonitor</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nombre EnableStatMonitor
+Descripción Si el módulo del monitor está abierto
+Tipo booleano
+#
+Monitoreo de datos</p>
+</div>
+<div class="paragraph">
+<p>Este módulo es para proporcionar información estadística sobre las operaciones de escritura:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>el tamaño de los datos (en bytes) en IoTDB, el número de puntos de datos en IoTDB;
+cuántas operaciones se han ejecutado correctamente o no.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>#
+Activar / desactivar el módulo</p>
+</div>
+<div class="paragraph">
+<p>Los usuarios pueden optar por habilitar o deshabilitar la función de monitoreo de estadísticas de datos (establezca el elemento enable_stat_monitor en el archivo de configuración).
+#
+Almacenamiento de datos estadísticos</p>
+</div>
+<div class="paragraph">
+<p>De forma predeterminada, los datos estadísticos solo se guardan en la memoria y se puede acceder a ellos mediante Jconsole.</p>
+</div>
+<div class="paragraph">
+<p>Los datos también se pueden escribir como series de tiempo en el disco. Para habilitarlo, configure enable_monitor_series_write = true en el archivo de configuración. Si es así, el uso de la declaración de selección en IoTDB-cli puede consultar estas series de tiempo.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Nota: si enable_monitor_series_write = true, cuando se reinicia IoTDB, los datos estadísticos anteriores se recuperarán en la memoria. si enable_monitor_series_write = false, IoTDB olvidará todos los datos estadísticos después de reiniciar la instancia.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>#
+Monitor de datos de escritura</p>
+</div>
+<div class="paragraph">
+<p>En la actualidad, el sistema de supervisión se puede dividir en dos módulos: estadísticas de escritura global y estadísticas de escritura del grupo de almacenamiento. Las estadísticas globales registran el número total de puntos y solicitudes, y las estadísticas del grupo de almacenamiento cuentan los datos de escritura de cada grupo de almacenamiento.</p>
+</div>
+<div class="paragraph">
+<p>El sistema establece la granularidad de recopilación del módulo de monitoreo para <strong> actualizar la información estadística una vez que un archivo de datos se descarga en el disco </strong>, por lo que la precisión de los datos puede ser diferente de la situación real. Para obtener información precisa, <strong> Por favor llame al método flush antes de consultar </strong>.</p>
+</div>
+<div class="paragraph">
+<p>Aquí están las estadísticas de escritura de datos (el rango admitido se muestra entre paréntesis):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOTAL_POINTS (GLOBAL)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nombre TOTAL_POINTS
+Descripción Calcula el número total de puntos de escritura globales.
+Timeseries Name root.stats. {"Global" | "storageGroupName"}. TOTAL_POINTS</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOTAL_REQ_SUCCESS (GLOBAL)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nombre TOTAL_REQ_SUCCESS
+Descripción Calcule el número de solicitudes exitosas globales.
+Serie temporal Nombre root.stats. "Global" .TOTAL_REQ_SUCCESS</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOTAL_REQ_FAIL (GLOBAL)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nombre TOTAL_REQ_FAIL
+Descripción Calcule el número de solicitudes fallidas globales.
+Serie temporal Nombre root.stats. "Global" .TOTAL_REQ_FAIL</p>
+</div>
+<div class="paragraph">
+<p>Los atributos anteriores también admiten la visualización en JConsole. Para la información estadística de cada grupo de almacenamiento, para evitar la confusión de visualización causada por demasiados grupos de almacenamiento, el usuario puede ingresar el nombre del grupo de almacenamiento en el método de operación bajo el monitor MBean para consultar la información estadística correspondiente.
+#
+Ejemplo</p>
+</div>
+<div class="paragraph">
+<p>Aquí damos algunos ejemplos de cómo escribir estadísticas de datos.</p>
+</div>
+<div class="paragraph">
+<p>Para conocer el número total de puntos de escritura globales, use la cláusula select para consultar su valor. La declaración de consulta es:</p>
+</div>
+<div class="paragraph">
+<p>seleccione TOTAL_POINTS de root.stats. "global"</p>
+</div>
+<div class="paragraph">
+<p>Para conocer el número total de puntos de escritura globales de root.ln (grupo de almacenamiento), la declaración de consulta es:</p>
+</div>
+<div class="paragraph">
+<p>seleccione TOTAL_POINTS de root.stats. "root.ln"</p>
+</div>
+<div class="paragraph">
+<p>Para conocer las últimas estadísticas del sistema actual, puede utilizar la última consulta de datos. Aquí está la declaración de consulta:</p>
+</div>
+<div class="paragraph">
+<p>enjuagar
+seleccione los últimos TOTAL_POINTS de root.stats. "global"</p>
+</div>
+<div class="paragraph">
+<p>#
+Monitor de rendimiento
+#
+Introducción</p>
+</div>
+<div class="paragraph">
+<p>Para comprender el rendimiento de iotdb, se agrega este módulo para contar el tiempo de consumo de cada operación. Este módulo puede calcular las estadísticas del tiempo promedio de cada operación y la proporción de cada operación cuyo consumo de tiempo cae dentro de un rango de tiempo. La salida está en el archivo log_measure.log. A continuación se muestra un ejemplo de salida.
+#
+Parámetro de configuración</p>
+</div>
+<div class="paragraph">
+<p>ubicación: conf/iotdb-engine.properties
+<strong> Tabla -parámetro y descripción </strong>
+Parámetro Valor predeterminado Descripción
+enable_performance_stat false Es el rendimiento estadístico de la habilitación del submódulo.
+performance_stat_display_interval 60000 El intervalo de visualización del resultado estadístico en ms.
+performance_stat_memory_in_kb 20 La memoria utilizada para performance_stat en kb.
+#
+JMX MBean</p>
+</div>
+<div class="paragraph">
+<p>Conéctese a jconsole con el puerto 31999, y seleccione la barra de menú MBeanin. Expanda la barra lateral y elija org.apache.iotdb.db.cost.statistic. Puedes encontrar:</p>
+</div>
+<div class="paragraph">
+<p>Atributo</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>EnableStat ： Ya sea que las estadísticas estén habilitadas o no, si es cierto, el módulo registra el tiempo que consume cada operación e imprime los resultados; No es editable, pero se puede cambiar con la función siguiente.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>DisplayIntervalInMs: el intervalo entre los resultados de impresión. Los cambios no surtirán efecto instantáneamente. Para que los cambios sean efectivos, debe llamar a startContinuousStatistics () o startOneTimeStatistics ().</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>OperationSwitch ： Es un mapa para indicar si las estadísticas de un tipo de operación deben ser calculadas, la clave es el nombre de la operación y el valor es verdadero significa que las estadísticas de la operación están habilitadas, de lo contrario deshabilitadas. Este parámetro no se puede cambiar directamente, se cambia mediante la operación 'changeOperationSwitch ()'.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Operación</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>startContinuousStatistics: inicie las estadísticas y la salida en el intervalo de "DisplayIntervalInMs".
+startOneTimeStatistics ： Inicia las estadísticas y la salida con retraso de "DisplayIntervalInMs".
+stopStatistic ： Detiene las estadísticas.
+clearStatisticalState (): borrar el resultado estadístico actual, restablecer el resultado estadístico.
+changeOperationSwitch (String operationName, Boolean operationState): establece si se debe monitorear un tipo de operación. El parámetro 'operationName' es el nombre de la operación, definido en el atributo operationSwitch. El parámetro operationState es si habilitar las estadísticas o no. Si el estado se cambia correctamente, la función devolverá verdadero; de lo contrario, devolverá falso.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>#
+Adición de elementos de supervisión personalizados para contribuyentes de IOTDB</p>
+</div>
+<div class="paragraph">
+<p>Agregar operación</p>
+</div>
+<div class="paragraph">
+<p>Agregue una enumeración en org.apache.iotdb.db.cost.statistic.Operation.</p>
+</div>
+<div class="paragraph">
+<p>Agregar código de tiempo en el área de monitoreo</p>
+</div>
+<div class="paragraph">
+<p>Agregue el código de tiempo en el área de inicio de monitoreo:</p>
+</div>
+<div class="paragraph">
+<p>long t0 = Sistema. currentTimeMillis ();</p>
+</div>
+<div class="paragraph">
+<p>Agregue el código de tiempo en el área de parada de monitoreo:</p>
+</div>
+<div class="paragraph">
+<p>Measurement.INSTANCE.addOperationLatency (Operación, t0);</p>
+</div>
+<div class="paragraph">
+<p>#
+Estadísticas de proporción de aciertos de caché
+#
+Visión general</p>
+</div>
+<div class="paragraph">
+<p>Para mejorar el rendimiento de las consultas, IOTDB almacena en caché ChunkMetaData y TsFileMetaData. Los usuarios pueden ver la tasa de aciertos de caché a través del registro de nivel de depuración y MXBean, y ajustar la memoria ocupada por el caché de acuerdo con la tasa de aciertos de caché y la memoria del sistema. El método de usar MXBean para ver la proporción de aciertos de caché es el siguiente:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Conéctese a jconsole con el puerto 31999 y seleccione 'MBean' en el elemento de menú de arriba.
+Expanda la barra lateral y seleccione 'org.apache.iotdb.db.service'. Obtendrá los resultados que se muestran en la siguiente figura:</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>#
+Registro del sistema</p>
+</div>
+<div class="paragraph">
+<p>IoTDB permite a los usuarios configurar los registros del sistema de IoTDB (como el nivel de salida del registro) modificando el archivo de configuración del registro. La ubicación predeterminada del archivo de configuración de registro del sistema está en la carpeta $ IOTDB_HOME / conf.</p>
+</div>
+<div class="paragraph">
+<p>El archivo de configuración de registro predeterminado se denomina logback.xml. El usuario puede modificar la configuración del registro de ejecución del sistema agregando o cambiando los parámetros del nodo del árbol xml. Cabe señalar que la configuración del registro del sistema mediante el archivo de configuración del registro no tiene efecto inmediatamente después de la modificación, sino que tendrá efecto después de reiniciar el sistema. El uso de logback.xml es el habitual.</p>
+</div>
+<div class="paragraph">
+<p>Al mismo tiempo, para facilitar la depuración del sistema por parte de los desarrolladores y DBA, proporcionamos varias interfaces JMX para modificar dinámicamente la configuración del registro y configurar el módulo de registro del sistema en tiempo real sin reiniciar el sistema.
+#
+Configuración de registro dinámico del sistema
+#
+Conectar JMX</p>
+</div>
+<div class="paragraph">
+<p>Aquí usamos JConsole para conectarnos con JMX.</p>
+</div>
+<div class="paragraph">
+<p>Inicie JConsole, establezca una nueva conexión JMX con el servidor IoTDB (puede seleccionar el proceso local o ingresar la IP y el PUERTO para la conexión remota, el puerto de operación predeterminado del servicio IoTDB JMX es 31999). La figura 4.1 muestra la GUI de conexión de JConsole.</p>
+</div>
+<div class="paragraph">
+<p>Después de conectarse, haga clic en MBean y busque ch.qos.logback.classic.default.ch.qos.logback.classic.jmx.JMXConfigurator (como se muestra en la figura 4.2).</p>
+</div>
+<div class="paragraph">
+<p>En la ventana JMXConfigurator, se proporcionan 6 operaciones, como se muestra en la figura 4.3. Puede utilizar estas interfaces para realizar la operación.
+#
+Instrucción de interfaz</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>reloadDefaultConfiguration</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Este método consiste en volver a cargar el archivo de configuración de logback predeterminado. El usuario puede modificar primero el archivo de configuración predeterminado y luego llamar a este método para volver a cargar el archivo de configuración modificado en el sistema para que surta efecto.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>reloadByFileName</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Este método carga un archivo de configuración de logback con la ruta y el nombre especificados, y luego lo hace efectivo. Este método acepta un parámetro de tipo String llamado p1, que es la ruta al archivo de configuración que debe especificarse para cargar.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>getLoggerEffectiveLevel</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Este método es para obtener el nivel de registro actual del registrador especificado. Este método acepta un parámetro de tipo String llamado p1, que es el nombre del registrador especificado. Este método devuelve el nivel de registro actualmente en vigor para el registrador especificado.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>getLoggerLevel</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Este método es para obtener el nivel de registro del registrador especificado. Este método acepta un parámetro de tipo String llamado p1, que es el nombre del registrador especificado. Este método devuelve el nivel de registro del registrador especificado. Cabe señalar que la diferencia entre este método y el método getLoggerEffectiveLevel es que el método devuelve el nivel de registro que el registrador especificado está configurado en el archivo de configuración. Si el usuario no establece el nivel de registro para el registrador, regrese vacío. Según el mecanismo de herencia de nivel de registro de Logger, el nivel de Logger no se establece explícitamente, heredará la configuración del nivel de registro de su antepasado más cercano. En este punto, llamar al método getLoggerEffectiveLevel devolverá el nivel de registro en el que el registrador está en vigor; llamar a getLoggerLevel devolverá un valor nulo.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
