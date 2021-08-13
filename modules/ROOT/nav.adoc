@@ -43,16 +43,17 @@ Guía de Usuario de IoTDB (V0.12.x)
      ** xref:protocolo-de-servicio-de-comunicacion/thrift.adoc[Thrift]
      ** xref:protocolo-de-servicio-de-comunicacion/mqtt.adoc[MQTT]
 
-Herramientas de Sistema
-     Cargar Archivo Ts Externo
-     Herramienta de Seguimiento del Rendimiento
-     Herramienta CSV
-     Herramientas de Seguimiento y Registro
-     Herramienta JMX
-     Herramienta MLogParser
-     Herramienta deb Nodo
-     Herramienta de Visualización del Historial de Consultas
-     Herramienta de Marca de Agua
+* Herramientas del Sistema
+     ** xref:herramientas-del-sistema/cargar-herramienta-tsfile-externa.adoc[Cargar Archivo Ts Externo]
+     ** xref:herramientas-del-sistema/herramienta-de-seguimiento-del-rendimiento.adoc[Herramienta de Seguimiento del Rendimiento]
+     ** xref:herramientas-del-sistema/herramienta-csv.adoc[Herramienta CSV]
+     ** xref:herramientas-del-sistema/herramientas-de-monitoreo-y-registro.adoc[Herramientas de Monitorep y Registro]
+     ** xref:herramientas-del-sistema/herramienta-jmx.adoc[Herramienta JMX]
+     ** xref:herramientas-del-sistema/herramienta-mlogparser.adoc[Herramienta MLogParser]
+     ** xref:herramientas-del-sistema/herramienta-node.adoc[Herramienta Node]
+     ** xref:herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.adoc[Herramienta de Visualización del Historial de Consultas]
+     ** xref:herramientas-del-sistema/herramienta-de-marca-de-agua.adoc[Herramienta de Marca de Agua]
+
 Colaboración de Edge y Cloud
      Herramienta de Sincronización
 Integración de Ecosistemas
