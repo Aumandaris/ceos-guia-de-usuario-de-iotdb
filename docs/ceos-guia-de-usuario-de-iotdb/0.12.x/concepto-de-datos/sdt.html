@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/concepto-de-datos/sdt.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Concepto de Datos</li>
+    <li><a href="sdt.html">SDT</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/concepto-de-datos/sdt.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p>SDT
+El algoritmo Swinging Door Trending (SDT) es un algoritmo de compresión con pérdida. SDT tiene una complejidad computacional baja y usa una tendencia lineal para representar una cantidad de datos.</p>
+</div>
+<div class="paragraph">
+<p>En IoTDB, SDT comprime y descarta datos al descargarlos en el disco.</p>
+</div>
+<div class="paragraph">
+<p>IoTDB le permite especificar las propiedades de SDT al crear una serie temporal y admite tres propiedades:</p>
+</div>
+<div class="sect1">
+<h2 id="_compdev_desviación_de_la_compresión"><a class="anchor" href="#_compdev_desviación_de_la_compresión"></a>CompDev (Desviación de la Compresión)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CompDev es el parámetro más importante en SDT que representa la diferencia máxima entre la muestra actual y la tendencia lineal actual. CompDev debe ser mayor que 0 para realizar la compresión.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compmintime_intervalo_de_tiempo_mínimo_de_compresión"><a class="anchor" href="#_compmintime_intervalo_de_tiempo_mínimo_de_compresión"></a>CompMinTime (Intervalo de Tiempo Mínimo de Compresión)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CompMinTime es un parámetro que mide la distancia de tiempo entre dos puntos de datos almacenados, que se utiliza para reducir el ruido. Si el intervalo de tiempo entre el punto actual y el último punto almacenado es menor o igual a su valor, el punto actual NO se almacenará independientemente de la desviación de la compresión. El valor predeterminado es 0 con unidad de tiempo ms.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compmaxtime_intervalo_de_tiempo_máximo_de_compresión"><a class="anchor" href="#_compmaxtime_intervalo_de_tiempo_máximo_de_compresión"></a>CompMaxTime (Intervalo de Tiempo Máximo de Compresión)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CompMaxTime es un parámetro que mide la distancia de tiempo entre dos puntos de datos almacenados. Si el intervalo de tiempo entre el punto actual y el último punto almacenado es mayor o igual a su valor, el punto actual se almacenará independientemente de la desviación de la compresión. El valor predeterminado es 9.223.372.036.854.775.807 con unidad de tiempo ms.</p>
+</div>
+<div class="paragraph">
+<p>La sintaxis especificada para SDT se detalla en [Crear Declaración de Serie Temporal].</p>
+</div>
+<div class="paragraph">
+<p>Tipos de datos admitidos:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>INT32 (Entero)</p>
+</li>
+<li>
+<p>INT64 (Entero Largo)</p>
+</li>
+<li>
+<p>FLOAT (Punto Flotante de Precisión Simple)</p>
+</li>
+<li>
+<p>DOUBLE (Punto Flotante de Precisión Doble)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>El siguiente es un ejemplo del uso de la compresión SDT.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; CREATE TIMESERIES root.sg1.d0.s0 WITH DATATYPE=INT32,ENCODING=PLAIN,LOSS=SDT,COMPDEV=2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Antes del lavado y la compresión SDT, los resultados se muestran a continuación:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; SELECT s0 FROM root.sg1.d0
++-----------------------------+--------------+
+|                         Time|root.sg1.d0.s0|
++-----------------------------+--------------+
+|2017-11-01T00:06:00.001+08:00|             1|
+|2017-11-01T00:06:00.002+08:00|             1|
+|2017-11-01T00:06:00.003+08:00|             1|
+|2017-11-01T00:06:00.004+08:00|             1|
+|2017-11-01T00:06:00.005+08:00|             1|
+|2017-11-01T00:06:00.006+08:00|             1|
+|2017-11-01T00:06:00.007+08:00|             1|
+|2017-11-01T00:06:00.015+08:00|            10|
+|2017-11-01T00:06:00.016+08:00|            20|
+|2017-11-01T00:06:00.017+08:00|             1|
+|2017-11-01T00:06:00.018+08:00|            30|
++-----------------------------+--------------+
+Total line number = 11
+It costs 0.008s</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Después del descarte y la compresión SDT, los resultados se muestran a continuación:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>IoTDB&gt; FLUSH
+IoTDB&gt; SELECT s0 FROM root.sg1.d0
++-----------------------------+--------------+
+|                         Time|root.sg1.d0.s0|
++-----------------------------+--------------+
+|2017-11-01T00:06:00.001+08:00|             1|
+|2017-11-01T00:06:00.007+08:00|             1|
+|2017-11-01T00:06:00.015+08:00|            10|
+|2017-11-01T00:06:00.016+08:00|            20|
+|2017-11-01T00:06:00.017+08:00|             1|
++-----------------------------+--------------+
+Total line number = 5
+It costs 0.044s</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>SDT entra en vigor cuando se descarta en el disco. El algoritmo SDT siempre almacena el primer punto y no almacena el último punto.</p>
+</div>
+<div class="paragraph">
+<p>Los datos en [2017-11-01T00:06:00.001, 2017-11-01T00:06:00.007] están dentro de la desviación de compresión, por lo que se descartaron. El punto de datos en el momento 2017-11-01T00:06:00.007 se almacena porque el siguiente punto de datos en el momento 2017-11-01T00:06:00.015 excede la desviación de compresión. Cuando un punto de datos excede la desviación de compresión, SDT almacena el último punto leído y actualiza los límites superior e inferior. El último punto a la hora 2017-11-01T00:06:00.018 no se almacena.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
