@@ -54,25 +54,30 @@ Guía de Usuario de IoTDB (V0.12.x)
      ** xref:herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.adoc[Herramienta de Visualización del Historial de Consultas]
      ** xref:herramientas-del-sistema/herramienta-de-marca-de-agua.adoc[Herramienta de Marca de Agua]
 
-Colaboración de Edge y Cloud
-     Herramienta de Sincronización
-Integración de Ecosistemas
-     Grafana
-     Zeppelin-IoTDB
-     MapReduce TsFile
-     Spark TsFile
-     Spark IoTDB
-     Hive TsFile
-     Flink IoTDB
-     Flink TsFile
-     Escribir Datos en HDFS
+* Colaboración de Edge y Cloud
+     ** xref:colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.adoc[Herramienta de Sincronización]
+
+* Integración de Ecosistemas
+     ** xref:integracion-de-ecosistemas/grafana.adoc[Grafana]
+     ** [Zeppelin-IoTDB]
+     ** [MapReduce TsFile]
+     ** [Spark TsFile]
+     ** [Spark IoTDB]
+     ** [Hive TsFile]
+     ** [Flink IoTDB]
+     ** [Flink TsFile]
+     ** [Escribir Datos en HDFS]
+
 Configuración de Clúster
      Configuración de Clúster
-Preguntas Frecuentes
-     Preguntas Frecuentes
+
+* Preguntas Frecuentes
+     ** xref:preguntas-frecuentes/preguntas-frecuentes.adoc[Preguntas Frecuentes]
+
 Apéndice
      Manual de Configuración
      Referencia SQL
      Códigos de Estado
+
 Comparación con TSDB
      Comparación
