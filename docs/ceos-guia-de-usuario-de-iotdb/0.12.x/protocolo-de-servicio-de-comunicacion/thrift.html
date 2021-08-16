@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Interfaz Thrift RCP :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/protocolo-de-servicio-de-comunicacion/thrift.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Colaboración de Edge y Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.html">Herramienta de Sincronización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integración de Ecosistemas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integracion-de-ecosistemas/grafana.html">Grafana</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Zeppelin-IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[MapReduce TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Spark TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Spark IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Hive TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Flink IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Flink TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Escribir Datos en HDFS]</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preguntas Frecuentes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../preguntas-frecuentes/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Protocolo de Servicio de Comunicación</li>
+    <li><a href="thrift.html">Thrift</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/protocolo-de-servicio-de-comunicacion/thrift.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Interfaz Thrift RCP</h1>
+<div class="sect1">
+<h2 id="_introducción"><a class="anchor" href="#_introducción"></a>Introducción</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Thrift es un framework de software de llamada a procedimiento remoto para el desarrollo de servicios extensibles y en varios idiomas. Combina una potente pila de software y un motor de generación de código, para construir servicios eficientes e integrados a la perfección entre lenguajes de programación como C++, Java, Go, Python, PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, JavaScript , Node.js, Smalltalk y OCaml.</p>
+</div>
+<div class="paragraph">
+<p>El servidor y el cliente de IoTDB utilizan Thrift para la comunicación. En el uso real, se recomienda utilizar el paquete de cliente nativo proporcionado por IoTDB: Session o Session Pool. Si tiene necesidades especiales, también puede programar directamente contra la interfaz RPC</p>
+</div>
+<div class="paragraph">
+<p>El servidor IoTDB predeterminado usa el puerto 6667 como puerto de comunicación RPC, puede modificar el elemento de configuración</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>rpc_port=6667</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>para cambiar el puerto de ahorro predeterminado.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_interfaz_rcp"><a class="anchor" href="#_interfaz_rcp"></a>Interfaz RCP</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>// open a session
+TSOpenSessionResp openSession(1:TSOpenSessionReq req);
+
+// close a session
+TSStatus closeSession(1:TSCloseSessionReq req);
+
+// run an SQL statement in batch
+TSExecuteStatementResp executeStatement(1:TSExecuteStatementReq req);
+
+// execute SQL statement in batch
+TSStatus executeBatchStatement(1:TSExecuteBatchStatementReq req);
+
+// execute query SQL statement
+TSExecuteStatementResp executeQueryStatement(1:TSExecuteStatementReq req);
+
+// execute insert, delete and update SQL statement
+TSExecuteStatementResp executeUpdateStatement(1:TSExecuteStatementReq req);
+
+// fetch next query result
+TSFetchResultsResp fetchResults(1:TSFetchResultsReq req)
+
+// fetch meta data
+TSFetchMetadataResp fetchMetadata(1:TSFetchMetadataReq req)
+
+// cancel a query
+TSStatus cancelOperation(1:TSCancelOperationReq req);
+
+// close a query dataset
+TSStatus closeOperation(1:TSCloseOperationReq req);
+
+// get time zone
+TSGetTimeZoneResp getTimeZone(1:i64 sessionId);
+
+// set time zone
+TSStatus setTimeZone(1:TSSetTimeZoneReq req);
+
+// get server's properties
+ServerProperties getProperties();
+
+// set storage group
+TSStatus setStorageGroup(1:i64 sessionId, 2:string storageGroup);
+
+// create timeseries
+TSStatus createTimeseries(1:TSCreateTimeseriesReq req);
+
+// create multi timeseries
+TSStatus createMultiTimeseries(1:TSCreateMultiTimeseriesReq req);
+
+// delete timeseries
+TSStatus deleteTimeseries(1:i64 sessionId, 2:list&lt;string&gt; path)
+
+// delete sttorage groups
+TSStatus deleteStorageGroups(1:i64 sessionId, 2:list&lt;string&gt; storageGroup);
+
+// insert record
+TSStatus insertRecord(1:TSInsertRecordReq req);
+
+// insert record in string format
+TSStatus insertStringRecord(1:TSInsertStringRecordReq req);
+
+// insert tablet
+TSStatus insertTablet(1:TSInsertTabletReq req);
+
+// insert tablets in batch
+TSStatus insertTablets(1:TSInsertTabletsReq req);
+
+// insert records in batch
+TSStatus insertRecords(1:TSInsertRecordsReq req);
+
+// insert records of one device
+TSStatus insertRecordsOfOneDevice(1:TSInsertRecordsOfOneDeviceReq req);
+
+// insert records in batch as string format
+TSStatus insertStringRecords(1:TSInsertStringRecordsReq req);
+
+// test the latency of innsert tablet，caution：no data will be inserted, only for test latency
+TSStatus testInsertTablet(1:TSInsertTabletReq req);
+
+// test the latency of innsert tablets，caution：no data will be inserted, only for test latency
+TSStatus testInsertTablets(1:TSInsertTabletsReq req);
+
+// test the latency of innsert record，caution：no data will be inserted, only for test latency
+TSStatus testInsertRecord(1:TSInsertRecordReq req);
+
+// test the latency of innsert record in string format，caution：no data will be inserted, only for test latency
+TSStatus testInsertStringRecord(1:TSInsertStringRecordReq req);
+
+// test the latency of innsert records，caution：no data will be inserted, only for test latency
+TSStatus testInsertRecords(1:TSInsertRecordsReq req);
+
+// test the latency of innsert records of one device，caution：no data will be inserted, only for test latency
+TSStatus testInsertRecordsOfOneDevice(1:TSInsertRecordsOfOneDeviceReq req);
+
+// test the latency of innsert records in string formate，caution：no data will be inserted, only for test latency
+TSStatus testInsertStringRecords(1:TSInsertStringRecordsReq req);
+
+// delete data
+TSStatus deleteData(1:TSDeleteDataReq req);
+
+// execute raw data query
+TSExecuteStatementResp executeRawDataQuery(1:TSRawDataQueryReq req);
+
+// request a statement id from server
+i64 requestStatementId(1:i64 sessionId);</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ruta_del_archivo_idl"><a class="anchor" href="#_ruta_del_archivo_idl"></a>Ruta del Archivo IDL</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La ruta del archivo IDL es <code>thrift/src/main/thrift/rpc.thrift</code>, que incluye la interfaz y la estructura.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ruta_del_archivo_de_destino"><a class="anchor" href="#_ruta_del_archivo_de_destino"></a>Ruta del Archivo de Destino</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Usaremos el archivo IDL de compilación Thrift en la compilación mvn, en el que generar el archivo .class de destino, la ruta del archivo de destino es <code>thrift/target/classes/org/apache/iotdb/service/rpc/thrift</code>.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
