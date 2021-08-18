@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Herramienta de Sincronización TsFile :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Colaboración de Edge y Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="herramienta-de-sincronizacion.html">Herramienta de Sincronización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integración de Ecosistemas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integracion-de-ecosistemas/grafana.html">Grafana</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Zeppelin-IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[MapReduce TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Spark TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Spark IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Hive TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Flink IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Flink TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Escribir Datos en HDFS]</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preguntas Frecuentes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../preguntas-frecuentes/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Colaboración de Edge y Cloud</li>
+    <li><a href="herramienta-de-sincronizacion.html">Herramienta de Sincronización</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Herramienta de Sincronización TsFile</h1>
+<div class="sect1">
+<h2 id="_introducción"><a class="anchor" href="#_introducción"></a>Introducción</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La herramienta de sincronización es una herramienta de la suite de IoTDB que carga periódicamente TsFiles persistentes desde el disco del remitente al receptor y los carga.</p>
+</div>
+<div class="paragraph">
+<p>En el lado del remitente de la sincronización, el módulo de sincronización es un proceso separado, independiente del proceso de IoTDB. Puede iniciarse y cerrarse mediante un script independiente (consulte las secciones [Uso] para obtener más detalles). El usuario puede configurar el ciclo de secuencia de la sincronización.</p>
+</div>
+<div class="paragraph">
+<p>En el lado del receptor de la sincronización, el módulo de sincronización está integrado en el motor de IoTDB y está en el mismo proceso que IoTDB. El módulo receptor escucha un puerto separado, que puede configurar el usuario (consulte la sección [Configuración] para obtener más detalles). Antes de usarlo, debe configurar una lista blanca en el receptor de sincronización, que se expresa como un segmento de red. El receptor solo acepta los datos transferidos desde el remitente ubicado en el segmento de la lista blanca, como se detalla en la sección [Configuración].</p>
+</div>
+<div class="paragraph">
+<p>La herramienta de sincronización tiene un modo de remitente-receptor de muchos a uno, es decir, un receptor de sincronización puede recibir datos de varios remitentes de sincronización simultáneamente, mientras que un remitente de sincronización solo puede enviar datos a un receptor de sincronización.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Antes de utilizar la herramienta de sincronización, el cliente y el servidor deben configurarse por separado. La configuración se detalla en la sección Configuración.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_escenario_de_aplicación"><a class="anchor" href="#_escenario_de_aplicación"></a>Escenario de Aplicación</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En el caso de una aplicación de fábrica, generalmente hay varias subfábricas y varias fábricas generales (principales). Cada subfábrica utiliza una instancia de IoTDB para recopilar datos y luego sincronizar los datos con la fábrica general para realizar copias de seguridad o análisis. Una fábrica general puede recibir datos de varias subfábricas y una subfábrica también puede sincronizar datos con varias fábricas generales. En este escenario, cada instancia de IoTDB administra diferentes dispositivos.
+En el módulo de sincronización, cada subfábrica es un remitente, una fábrica general es un receptor y los remitentes sincronizan periódicamente los datos con los receptores. En el escenario anterior, los datos de un dispositivo solo pueden ser recopilados por un remitente, por lo que no hay superposición de dispositivos entre los datos sincronizados por varios remitentes. De lo contrario, el escenario de aplicación del módulo de sincronización no se satisface.</p>
+</div>
+<div class="paragraph">
+<p>Cuando hay un escenario anormal, es decir, dos o más remitentes sincronizan los datos del mismo dispositivo (cuyo grupo de almacenamiento está configurado como <code>root.sg</code>) al mismo receptor, los datos <code>root.sg</code> del remitente que contienen los datos del dispositivo recibidos más tarde por el receptor será rechazada. Ejemplo: el motor 1 sincroniza los grupos de almacenamiento` root.sg1` y <code>root.sg2</code> con el receptor, y el motor 2 sincroniza los grupos de almacenamiento <code>root.sg2</code> y <code>root.sg3</code> con el receptor. Todos ellos incluyen la serie temporal <code>root.sg2.d0.s0</code>. Si el receptor recibe primero los datos de <code>root.sg2.d0.s0</code> del remitente 1, el receptor rechazará los datos de <code>root.sg2</code> del remitente 2.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuración"><a class="anchor" href="#_configuración"></a>Configuración</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_receptor_de_sincronización"><a class="anchor" href="#_receptor_de_sincronización"></a>Receptor de Sincronización</h3>
+<div class="paragraph">
+<p>La configuración de parámetros del receptor de sincronización se encuentra en el archivo de configuración <code>iotdb-engine.properties</code> de IoTDB, y su directorio es <code>$IOTDB_HOME/conf/iotdb-engine.properties</code>. En este archivo de configuración, hay cuatro parámetros relacionados con el receptor de sincronización. Las instrucciones de configuración son las siguientes:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parámetro: <code>is_sync_enable</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interruptor de función de sincronización, que está configurado como verdadero para indicar que el receptor puede recibir los datos del remitente y cargarlos. Cuando se establece en falso, significa que el receptor no puede recibir los datos de ningún remitente.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">booleano</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modalidades de Entrada en Vigor Después de la Modificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinicio del receptor</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parámetro: <code>IP_white_list</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configure una lista blanca de direcciones IP de remitentes, que se expresa en forma de segmentos de red y se separa por comas entre varios segmentos de red. Cuando el remitente transfiere datos al receptor, solo cuando la dirección IP del remitente se encuentra dentro del segmento de red establecido por la lista blanca, el receptor puede permitir la operación de sincronización. Si la lista blanca está vacía, el receptor no permite que ningún remitente sincronice datos. El receptor predeterminado acepta todas las solicitudes de sincronización de IP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0.0.0.0/0</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modalidades de Entrada en Vigor Después de la Modificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinicio del receptor</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parámetro: <code>sync_server_port</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puerto del receptor de sincronización para escuchar. Asegúrese de que el puerto no sea un puerto reservado del sistema y no esté ocupado. Este parámetro es válido solo cuando el parámetro <code>is_sync_enable</code> se establece en <code>TRUE</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entero corto: [0,65535]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>5555</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modalidades de Entrada en Vigor Después de la Modificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinicio del receptor</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_sincronizar_remitente"><a class="anchor" href="#_sincronizar_remitente"></a>Sincronizar Remitente</h3>
+<div class="paragraph">
+<p>Los parámetros del remitente de sincronización se configuran en un archivo de configuración independiente <code>iotdb-sync-client.properties</code> con el directorio de instalación <code>$IOTDB_HOME/conf/iotdb-sync-client.properties</code>. En este archivo de configuración, hay cinco parámetros relacionados con el remitente de sincronización. Las instrucciones de configuración son las siguientes:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parámetro: <code>server_ip</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dirección IP del receptor de sincronización.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>127.0.0.1</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modalidades de Entrada en Vigor Después de la Modificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinicio del cliente</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parámetro: <code>server_port</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puerto de escucha del receptor de sincronización, es necesario asegurarse de que el puerto sea coherente con la configuración del puerto de escucha establecido en el receptor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entero corto: [0,65535]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>5555</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modalidades de Entrada en Vigor Después de la Modificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinicio del cliente</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parámetro: <code>sync_period_in_second</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El período de tiempo del proceso de sincronización, la unidad de tiempo es el segundo.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entero: [0,2147483647]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>600</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modalidades de Entrada en Vigor Después de la Modificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinicio del cliente</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parámetro: <code>iotdb_schema_directory</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La ruta absoluta del archivo de esquema de IoTDB del remitente, como <code>$IOTDB_HOME/data/system/schema/mlog.txt</code> (si el usuario no establece manualmente la ruta de los metadatos del esquema, la ruta es la ruta predeterminada del motor de IoTDB). Este parámetro no es válido por defecto y se configura manualmente cuando el usuario lo necesita.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modalidades de Entrada en Vigor Después de la Modificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinicio del cliente</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parámetro: <code>sync_storage_groups</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Este parámetro representa los grupos de almacenamiento que participan en la tarea de sincronización, que distingue cada grupo de almacenamiento por comas. Si la lista está vacía, significa que todos los grupos de almacenamiento participan en la sincronización. Por defecto, es una lista vacía.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entero: [0,2147483647]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ejemplo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>root.sg1, root.sg2</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modalidades de Entrada en Vigor Después de la Modificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinicio del cliente</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parámetro: <code>max_number_of_sync_file_retry</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El número máximo de reintentos cuando falla la sincronización de un archivo con el receptor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entero: [0,2147483647]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ejemplo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>5</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modalidades de Entrada en Vigor Después de la Modificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinicio del cliente</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uso"><a class="anchor" href="#_uso"></a>Uso</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_iniciar_receptor_de_sincronización"><a class="anchor" href="#_iniciar_receptor_de_sincronización"></a>Iniciar Receptor de Sincronización</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Configure los parámetros del receptor de sincronización. Por ejemplo:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>	####################
+	### Sync Server Configuration
+	####################
+	# Whether to open the sync_server_port for receiving data from sync client, the default is closed
+	is_sync_enable=false
+	# Sync server port to listen
+	sync_server_port=5555
+	# White IP list of Sync client.
+	# Please use the form of network segment to present the range of IP, for example: 192.168.0.0/16
+	# If there are more than one IP segment, please separate them by commas
+	# The default is to allow all IP to sync
+	ip_white_list=0.0.0.0/0</code></pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Inicie el motor de IoTDB, y el receptor de sincronización se iniciará al mismo tiempo, y el registro de LOG comenzará con la oración IoTDB: <code>IoTDB: start SYNC ServerService successfully</code> indicando el inicio exitoso del receptor de retorno.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_detener_el_receptor_de_sincronización"><a class="anchor" href="#_detener_el_receptor_de_sincronización"></a>Detener el Receptor de Sincronización</h3>
+<div class="paragraph">
+<p>Detenga IoTDB y el receptor de sincronización se cerrará al mismo tiempo.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_iniciar_el_remitente_de_sincronización"><a class="anchor" href="#_iniciar_el_remitente_de_sincronización"></a>Iniciar el Remitente de Sincronización</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Configure los parámetros del remitente de sincronización. Por ejemplo:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>	# Sync receiver server address
+	server_ip=127.0.0.1
+	# Sync receiver server port
+	server_port=5555
+	# The period time of sync process, the time unit is second.
+	sync_period_in_second=600
+	# This parameter represents storage groups that participate in the synchronization task, which distinguishes each storage group by comma.
+	# If the list is empty, it means that all storage groups participate in synchronization.
+	# By default, it is empty list.
+	# sync_storage_groups = root.sg1, root.sg2
+	# The maximum number of retry when syncing a file to receiver fails.
+	max_number_of_sync_file_retry=5</code></pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Iniciar el remitente de sincronización los usuarios pueden utilizar los scripts de la carpeta <code>$IOTDB_HOME/tools</code> para iniciar el remitente de sincronización. Para usuarios de Linux y Mac OS X:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">  Shell &gt;$IOTDB_HOME/tools/start-sync-client.sh</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Para usuarios de Windows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">  Shell &gt;$IOTDB_HOME\tools\start-sync-client.bat</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_detener_el_remitente_de_sincronización"><a class="anchor" href="#_detener_el_remitente_de_sincronización"></a>Detener el Remitente de Sincronización</h3>
+<div class="paragraph">
+<p>Los usuarios pueden utilizar los scripts de la carpeta $ IOTDB_HOME / tools para detener el remitente de sincronización. Para usuarios de Linux y Mac OS X:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">  Shell &gt;$IOTDB_HOME/tools/stop-sync-client.sh</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Para usuarios de Windows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">  Shell &gt;$IOTDB_HOME\tools\stop-sync-client.bat</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

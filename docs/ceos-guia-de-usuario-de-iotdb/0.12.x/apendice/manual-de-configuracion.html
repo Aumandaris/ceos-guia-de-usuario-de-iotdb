@@ -1,0 +1,2735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Apéndice 1: Parámetros de Configuración :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/apendice/manual-de-configuracion.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Colaboración de Edge y Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.html">Herramienta de Sincronización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integración de Ecosistemas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integracion-de-ecosistemas/grafana.html">Grafana</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Zeppelin-IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[MapReduce TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Spark TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Spark IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Hive TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Flink IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Flink TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Escribir Datos en HDFS]</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preguntas Frecuentes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../preguntas-frecuentes/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li><a href="manual-de-configuracion.html">Apéndice 1: Parámetros de Configuración</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/apendice/manual-de-configuracion.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Apéndice 1: Parámetros de Configuración</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Antes de comenzar a usar IoTDB, primero debe configurar los archivos de configuración. Para su comodidad, ya hemos establecido la configuración predeterminada en los archivos.</p>
+</div>
+<div class="paragraph">
+<p>En total, proporcionamos a los usuarios tres tipos de módulos de configuración:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Archivo de configuración del entorno (<code>iotdb-env.bat</code>, <code>iotdb-env.sh</code>). El archivo de configuración predeterminado para el elemento de configuración del entorno. Los usuarios pueden configurar los elementos de configuración del sistema relevantes de JAVA-JVM en el archivo.</p>
+</li>
+<li>
+<p>archivo de configuración del sistema (<code>iotdb-engine.properties</code>).</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>iotdb-engine.properties</code>: el archivo de configuración predeterminado para el elemento de configuración de la capa del motor de IoTDB. Los usuarios pueden configurar los parámetros relacionados con el motor IoTDB en el archivo, como el puerto de escucha del servicio JDBC (<code>rpc_port</code>), el directorio de almacenamiento de datos sin secuencia (<code>unsequence_data_dir</code>), etc. Además, los usuarios pueden configurar la información sobre TsFile, como el tamaño de los datos escritos al disco por tiempo (<code>group_size_in_byte</code>).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>archivo de configuración de registro (<code>logback.xml</code>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Los archivos de configuración de los tres elementos de configuración se encuentran en el directorio de instalación de IoTDB: carpeta <code>$IOTDB_HOME/conf</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuración_de_modificación_en_caliente"><a class="anchor" href="#_configuración_de_modificación_en_caliente"></a>Configuración de Modificación en Caliente</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Para la comodidad de los usuarios, el servidor IoTDB proporciona a los usuarios una función de modificación en caliente, es decir, modificar algunos parámetros de configuración en <code>iotdb engine.properties</code> durante el funcionamiento del sistema y aplicándolas al sistema de forma inmediata. En los parámetros que se describen a continuación, estos parámetros cuya forma de <code>Effective</code> es <code>trigger</code>, admiten la modificación en caliente.</p>
+</div>
+<div class="paragraph">
+<p>Modo de activación: el cliente envía el comando <code>load configuration</code> al servidor IoTDB. Consulte el Capítulo 4 para conocer el uso del cliente.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_archivo_de_configuración_del_entorno_de_iotdb"><a class="anchor" href="#_archivo_de_configuración_del_entorno_de_iotdb"></a>Archivo de Configuración del Entorno de IoTDB</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>El archivo de configuración del entorno se utiliza principalmente para configurar los parámetros relacionados con el entorno Java cuando se está ejecutando el servidor IoTDB, como la configuración relacionada con JVM. Esta parte de la configuración se pasa a la JVM cuando se inicia el servidor IoTDB. Los usuarios pueden ver el contenido del archivo de configuración del entorno viendo el archivo <code>iotdb-env.sh</code> (o <code>iotdb-env.bat</code>).</p>
+</div>
+<div class="paragraph">
+<p>Los detalles de cada variable son los siguientes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>MAX_HEAP_SIZE</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MAX_HEAP_SIZE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El tamaño máximo de memoria de pila que IoTDB puede usar al inicio.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En Linux o MacOS, el valor predeterminado es una cuarta parte de la memoria. En Windows, el valor predeterminado para sistemas de 32 bits es 512M y el valor predeterminado para sistemas de 64 bits es 2G.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>HEAP_NEWSIZE</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HEAP_NEWSIZE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El tamaño mínimo de memoria de pila que IoTDB puede usar al inicio.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En Linux o MacOS, el valor predeterminado es mínimo {núcleos * 100M, un cuarto de MAX_HEAP_SIZE}. En Windows, el valor predeterminado para sistemas de 32 bits es 512M y el valor predeterminado para sistemas de 64 bits es 2G.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>JMX_LOCAL</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JMX_LOCAL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modo de monitoreo JMX, configurado como sí para permitir solo monitoreo local, no para permitir monitoreo remoto.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cadena numerada: "true", "false"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>JMX_PORT</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JMX_PORT</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puerto de escucha JMX. Confirme que el puerto no es un puerto reservado del sistema y que no está ocupado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entero corto: [0,65535]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>31999</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>JMX_IP</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JMX_IP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dirección de escucha de JMX. Solo tiene efecto si JMX_LOCAL=false. 0.0.0.0 nunca está permitido.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>127.0.0.1</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_autorización_jmx"><a class="anchor" href="#_autorización_jmx"></a>Autorización JMX</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le <strong>recomendamos encarecidamente</strong> que <strong>cambie la contraseña</strong> para la conexión remota JMX.</p>
+</div>
+<div class="paragraph">
+<p>El usuario y las contraseñas están en <code>${IOTDB_CONF}/conf/jmx.password</code>.</p>
+</div>
+<div class="paragraph">
+<p>Las definiciones de permisos están en <code>${IOTDB_CONF}/conf/jmx.access</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_archivo_de_configuración_del_sistema_iotdb"><a class="anchor" href="#_archivo_de_configuración_del_sistema_iotdb"></a>Archivo de Configuración del Sistema IoTDB</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_capa_de_archivo"><a class="anchor" href="#_capa_de_archivo"></a>Capa de Archivo</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>compressor</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">compressor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Método de compresión de datos.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cadena enumerada: “UNCOMPRESSED”, “SNAPPY”</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>UNCOMPRESSED</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>group_size_in_byte</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">group_size_in_byte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El tamaño de los datos escritos en el disco por vez.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>134217728</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>page_size_in_byte</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">page_size_in_byte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El tamaño máximo de una sola página escrita en la memoria cuando se escribe cada columna en la memoria (en bytes).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>65536</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>max_number_of_points_in_page</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_number_of_points_in_page</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El número máximo de puntos de datos (marcas de tiempo - grupos valorados) contenidos en una página.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>1048576</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>max_degree_of_index_node</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_degree_of_index_node</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El grado máximo del árbol de índice de metadatos (es decir, el número máximo de hijos de cada nodo).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>256</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solo se permite modificar en la primera puesta en marcha.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>max_string_length</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max_string_length</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La longitud máxima de una sola cadena (número de caracteres).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>128</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>time_series_data_type</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time_series_data_type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo de datos de marca de tiempo.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cadena enumerada: "INT32", "INT64"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Int64</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>time_encoder</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time_encoder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo de codificación de la columna de tiempo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cadena enumerada: “TS_2DIFF”,“PLAIN”,“RLE”</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>TS_2DIFF</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>value_encoder</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value_encoder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo de codificación de la columna de valor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cadena enumerada: “TS_2DIFF”,“PLAIN”,“RLE”</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PLAIN</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>float_precision</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">float_precision</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La precisión del número de punto flotante (el número de dígitos después del punto decimal)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El valor predeterminado es 2 dígitos. Nota: El número de coma flotante de 32 bits tiene una precisión decimal de 7 bits y el número de coma flotante de 64 bits tiene una precisión decimal de 15 bits. Si el ajuste está fuera del rango, no tendrá ningún significado práctico.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>bloomFilterErrorRate</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">float_precision</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La tasa de falsos positivos del filtro de floración en cada TsFile. El filtro Bloom comprueba si una serie temporal determinada está en el archivo ts antes de cargar los metadatos. Esto puede mejorar el rendimiento de la carga de metadatos y omitir el archivo ts que no contiene series de tiempo especificadas. Si desea obtener más información sobre su mecanismo, puede consultar: [página wiki de filtro de floración].</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">float, (0, 1)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0.05</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_capa_de_motor"><a class="anchor" href="#_capa_de_motor"></a>Capa de Motor</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>rpc_address</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rpc_address</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El servicio jdbc escucha la dirección.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0.0.0.0</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>rpc_port</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rpc_port</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El servicio jdbc escucha en el puerto. Confirme que el puerto no es un puerto reservado del sistema y que no está ocupado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entero corto: [0,65535]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>6667</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>rpc_thrift_compression_enable</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rpc_thrift_compression_enable</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si habilita la compresión de ahorro (usando GZIP).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booleano</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>rpc_advanced_compression_enable</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rpc_advanced_compression_enable</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si habilita la compresión avanzada de thrift.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booleano</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>time_zone</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time_zone</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La zona horaria en la que se encuentra el servidor, el valor predeterminado es la hora de Beijing (+8).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cadena de zona horaria</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>+08:00</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>base_dir</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">base_dir</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La carpeta del sistema IoTDB. Se recomienda utilizar una ruta absoluta..</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>data</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>data_dirs</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">base_dir</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Los directorios de archivos de datos. Varios directorios están separados por comas. El directorio de inicio de la ruta relativa está relacionado con el sistema operativo. Se recomienda utilizar una ruta absoluta. Si la ruta no existe, el sistema la creará automáticamente.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>data/data</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>wal_dir</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wal_dir</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ruta de almacenamiento del registro de escritura anticipada. Se recomienda utilizar una ruta absoluta.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>data/wal</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>enable_wal</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enable_wal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si se habilita el registro previo a la escritura. El valor predeterminado es verdadero (habilitado) y falso significa cerrado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booleano</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>enable_mem_control</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enable_mem_control</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Habilita el control de memoria para evitar OOM</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booleano</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>memtable_size_threshold</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">memtable_size_threshold</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tamaño máximo de memoria</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Largo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>1073741824</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cuando `enable_mem_contro`l es falso y después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>avg_series_point_number_threshold</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">avg_series_point_number_threshold</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Número medio máximo de puntos de cada serie en <code>memtable</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>tsfile_size_threshold</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsfile_size_threshold</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tamaño máximo de TsFiles</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Largo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>536870912</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>enable_partition</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enable_partition</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si habilita la partición de tiempo para los datos, si está deshabilitada, todos los datos pertenecen a la partición 0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booleano</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solo se permite modificar en la primera puesta en marcha</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>partition_interval</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">partition_interval</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rango de tiempo para dividir el grupo de almacenamiento, los datos de la serie de tiempo se dividirán en grupos por este rango de tiempo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int64</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>604800</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solo se permite modificar en la primera puesta en marcha</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>concurrent_writing_time_partition</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">concurrent_writing_time_partition</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Esta configuración decide cuántas particiones de tiempo en un grupo de almacenamiento se pueden insertar al mismo tiempo.
+Por ejemplo, su intervalo de partición es 86400 y desea insertar datos en 5 días diferentes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>multi_dir_strategy</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multi_dir_strategy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La estrategia de IoTDB para seleccionar directorios para TsFile en <code>tsfile_dir</code>. Puede usar un nombre de clase simple o un nombre completo de la clase. El sistema proporciona las siguientes tres estrategias:</p>
+<p class="tableblock">. <code>SequenceStrategy</code>: IoTDB selecciona el directorio de <code>tsfile_dir</code> en orden, atraviesa todos los directorías en tsfile_dir a su vez, y sigue contando;</p>
+<p class="tableblock">. <code>MaxDiskUsableSpaceFirstStrategy</code>: IoTDB primero selecciona el directorio con el mayor espacio libre en disco en <code>tsfile_dir</code>;</p>
+<p class="tableblock">. <code>MinFolderOccupiedSpaceFirstStrategy</code>: IoTDB prefiere el directorio con el menor espacio utilizado en <code>tsfile_dir</code>;</p>
+<p class="tableblock">. <code>UserDfineStrategyPackage</code> (política definida por el usuario)
+Puede completar una política definida por el usuario de las siguientes formas:</p>
+<p class="tableblock">.. Heredar la clase <code>cn.edu.tsinghua.iotdb.conf.directories.strategy.DirectoryStrategy</code> e implementar su propio método de estrategia;</p>
+<p class="tableblock">.. Complete la clase de configuración con el nombre completo de la clase implementada (nombre del paquete más el nombre de la clase, <code>UserDfineStrategyPackage</code>);</p>
+<p class="tableblock">.. Agregue el archivo jar al proyecto.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>MaxDiskUsableSpaceFirstStrategy</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>tsfile_size_threshold</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsfile_size_threshold</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cuando un tamaño de TsFile en el disco excede este umbral, TsFile se cierra y abre un nuevo TsFile para aceptar escrituras de datos. La unidad es byte y el valor predeterminado es 2G.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int64</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>536870912</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>tag_attribute_total_size</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tag_attribute_total_size</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El tamaño máximo de persistencia de etiquetas y atributos de cada serie temporal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>700</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solo se permite modificar en la primera puesta en marcha</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>enable_partial_insert</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enable_partial_insert</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si continuar escribiendo otras medidas si algunas medidas fallan en una inserción.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booleano</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>mtree_snapshot_interval</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mtree_snapshot_interval</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El menor número de líneas de intervalo de mlog.txt al crear un punto de control y guardar una instantánea de MTree. Unidad: números de línea.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>100000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>flush_wal_threshold</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">flush_wal_threshold</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Una vez que WAL alcanza este valor, se descarga en el disco y es posible perder como máximo las operaciones <code>flush_wal_threshold</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>force_wal_period_in_ms</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">force_wal_period_in_ms</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El período durante el cual el registro se ve obligado periódicamente a descargarse en el disco (en milisegundos).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activado</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>fetch_size</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fetch_size</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La cantidad de datos leídos cada vez por lotes (el número de tiras de datos, es decir, el número de marcas de tiempo diferentes).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>merge_concurrent_threads</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">merge_concurrent_threads</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El máximo de subprocesos que se pueden utilizar cuando se combinan datos no secuenciales. Cuanto más grande es, más IO y coste de CPU. Cuanto menor sea el valor, más ocupado estará el disco, cuando los datos sin secuencia son demasiado grandes, la lectura será más lenta.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>enable_stat_monitor</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enable_stat_monitor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si se habilitan las estadísticas en segundo plano.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booleano</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>concurrent_flush_thread</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">concurrent_flush_thread</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El número de subproceso utilizado para realizar la operación cuando IoTDB escribe datos en la memoria en el disco. Si el valor es menor o igual a 0, entonces se usa el número de núcleos de CPU instalados en la máquina. El valor predeterminado es 0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Int32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>tsfile_storage_fs</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsfile_storage_fs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El sistema de archivos de almacenamiento de Tsfile y archivos de datos relacionados. Actualmente se admiten el sistema de archivos LOCAL y HDFS.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOCAL</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solo se permite modificar en la primera puesta en marcha</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>core_site_path</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">core_site_path</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ruta de archivo absoluta de core-site.xml si Tsfile y los archivos de datos relacionados se almacenan en HDFS.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/etc/hadoop/conf/core-site.xml</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>hdfs_site_path</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hdfs_site_path</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ruta de archivo absoluta de hdfs-site.xml si Tsfile y los archivos de datos relacionados se almacenan en HDFS.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/etc/hadoop/conf/hdfs-site.xml</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>hdfs_ip</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hdfs_ip</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP de HDFS si Tsfile y los archivos de datos relacionados se almacenan en HDFS. Si hay más de un hdfs_ip en la configuración, se utiliza Hadoop HA.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>localhost</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>hdfs_port</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hdfs_port</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puerto de HDFS si Tsfile y los archivos de datos relacionados se almacenan en HDFS.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>9000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>dfs_nameservices</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dfs_nameservices</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Servicios de nombres de HDFS HA ​​si se usa Hadoop HA.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hdfsnamespace</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>dfs_ha_namenodes</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dfs_ha_namenodes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nodos de nombres bajo los servicios de nombres DFS de HDFS HA ​​si se usa Hadoop HA.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nn1, nn2</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>dfs_ha_automatic_failover_enabled</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dfs_ha_automatic_failover_enabled</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si se usa la conmutación por error automática si se usa Hadoop HA.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booleano</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>dfs_client_failover_proxy_provider</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dfs_client_failover_proxy_provider</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Proveedor de proxy si usa Hadoop HA y habilita la conmutación por error automática.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>hdfs_use_kerberos</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hdfs_use_kerberos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si usa kerberos para autenticar hdfs.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>kerberos_keytab_file_path</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kerberos_keytab_file_path</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ruta completa del archivo keytab de Kerberos.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/path</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>kerberos_principal</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kerberos_principal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kerberos pricipal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Su principal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>authorizer_provider_class</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">authorizer_provider_class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El nombre de la clase del servicio de autorización.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>org.apache.iotdb.db.auth.authorizer.LocalFileAuthorizer</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>openID_url</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">openID_url</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El servidor openID si <code>OpenIdAuthorizer</code> está habilitado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De cadena (String (a http url))</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>no</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>thrift_max_frame_size</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">thrift_max_frame_size</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Los bytes máximos en una solicitud/respuesta RPC.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Largo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>67108864 (si &gt;= 8 * 1024 * 1024)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creación_automática_de_esquemas_e_inferencia_de_tipos"><a class="anchor" href="#_creación_automática_de_esquemas_e_inferencia_de_tipos"></a>Creación Automática de Esquemas e Inferencia de Tipos</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>enable_auto_create_schema</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enable_auto_create_schema</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si se crea automáticamente la serie temporal cuando se reciben datos de una serie temporal que no existen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code> o <code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>default_storage_group_level</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">default_storage_group_level</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El nivel de grupo de almacenamiento cuando se crea un esquema automáticamente está habilitado. Por ejemplo, si recibimos un punto de datos de root.sg0.d1.s2, configuraremos root.sg0 como el grupo de almacenamiento si el nivel del grupo de almacenamiento es 1. (la raíz es el nivel 0).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entero</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>1</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>boolean_string_infer_type</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">boolean_string_infer_type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A qué tipo se deben asignar los valores "verdadero" y "falso".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>BOOLEAN</code> o <code>TEXT</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>BOOLEAN</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>integer_string_infer_type</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">integer_string_infer_type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A qué tipo se debe resolver una cadena entera como "67" en una consulta.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>INT32</code>, <code>INT64</code>, <code>DOUBLE</code>, <code>FLOAT</code> o <code>TEXT</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DOUBLE</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>nan_string_infer_type</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nan_string_infer_type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A qué tipo se debe resolver el valor NaN en una consulta.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DOUBLE</code>, <code>FLOAT</code> o <code>TEXT</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>FLOAT</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>floating_string_infer_type</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">floating_string_infer_type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A qué tipo se debe resolver una cadena de número flotante como "6.7" en una consulta.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DOUBLE</code>, <code>FLOAT</code> o <code>TEXT</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>FLOAT</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>enable_partition</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enable_partition</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">si habilita la partición de datos. Si está deshabilitado, todos los datos pertenecen a la partición 0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>BOOLEAN</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>partition_interval</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nombre</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">partition_interval</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descripción</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rango de tiempo para particionar datos dentro de cada grupo de almacenamiento, la unidad es la segunda.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LONG</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Predeterminado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>604800</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efectivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Después de reiniciar el sistema</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_habilitar_el_registro_de_gc"><a class="anchor" href="#_habilitar_el_registro_de_gc"></a>Habilitar el Registro de GC</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>El registro de GC está desactivado de forma predeterminada. Para ajustar el rendimiento, es posible que desee recopilar la información del GC.</p>
+</div>
+<div class="paragraph">
+<p>Para habilitar el registro de GC, simplemente agregue un parámetro <code>printgc</code> cuando inicie el servidor.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Bash hljs" data-lang="Bash">nohup sbin/start-server.sh printgc &gt;/dev/null 2&gt;&amp;1 &amp;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>O</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Bash hljs" data-lang="Bash">sbin\start-server.bat printgc</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>El registro de GC se almacena en <code>IOTDB_HOME/logs/gc.log</code>. Habrá como máximo 10 archivos gc.log. * Y cada uno puede alcanzar los 10 MB.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

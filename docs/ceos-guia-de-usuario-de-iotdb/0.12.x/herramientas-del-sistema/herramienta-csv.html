@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Herramienta CSV :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/herramientas-del-sistema/herramienta-csv.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Colaboración de Edge y Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.html">Herramienta de Sincronización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integración de Ecosistemas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integracion-de-ecosistemas/grafana.html">Grafana</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Zeppelin-IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[MapReduce TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Spark TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Spark IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Hive TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Flink IoTDB]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Flink TsFile]</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">[Escribir Datos en HDFS]</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preguntas Frecuentes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../preguntas-frecuentes/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Herramientas del Sistema</li>
+    <li><a href="herramienta-csv.html">Herramienta CSV</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/herramientas-del-sistema/herramienta-csv.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Herramienta CSV</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>La herramienta CSV puede ayudarlo a importar datos en formato CSV a IoTDB o exportar datos de IoTDB a un archivo CSV.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uso_de_import_csv_sh"><a class="anchor" href="#_uso_de_import_csv_sh"></a>Uso de import-csv.sh</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_crear_metadatos_opcional"><a class="anchor" href="#_crear_metadatos_opcional"></a>Crear Metadatos (Opcional)</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-SQL hljs" data-lang="SQL">SET STORAGE GROUP TO root.fit.d1;
+SET STORAGE GROUP TO root.fit.d2;
+SET STORAGE GROUP TO root.fit.p;
+CREATE TIMESERIES root.fit.d1.s1 WITH DATATYPE=INT32,ENCODING=RLE;
+CREATE TIMESERIES root.fit.d1.s2 WITH DATATYPE=TEXT,ENCODING=PLAIN;
+CREATE TIMESERIES root.fit.d2.s1 WITH DATATYPE=INT32,ENCODING=RLE;
+CREATE TIMESERIES root.fit.d2.s3 WITH DATATYPE=INT32,ENCODING=RLE;
+CREATE TIMESERIES root.fit.p.s1 WITH DATATYPE=INT32,ENCODING=RLE;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>IoTDB tiene la capacidad de inferencia de tipos, por lo que no es necesario crear metadatos antes de importar los datos. Sin embargo, recomendamos crear metadatos antes de importar datos con la herramienta de importación CSV, ya que esto puede evitar errores de conversión de tipo innecesarios.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ejemplo_de_archivo_csv_para_importar"><a class="anchor" href="#_ejemplo_de_archivo_csv_para_importar"></a>Ejemplo de Archivo CSV para Importar</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-SQL hljs" data-lang="SQL">Time,root.fit.d1.s1,root.fit.d1.s2,root.fit.d2.s1,root.fit.d2.s3,root.fit.p.s1
+1,100,hello,200,300,400
+2,500,world,600,700,800
+3,900,"hello, \"world\"",1000,1100,1200</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sintaxis"><a class="anchor" href="#_sintaxis"></a>Sintaxis</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell"># Unix/OS X
+&gt; tools/import-csv.sh -h &lt;ip&gt; -p &lt;port&gt; -u &lt;username&gt; -pw &lt;password&gt; -f &lt;xxx.csv&gt;
+
+# Windows
+&gt; tools\import-csv.bat -h &lt;ip&gt; -p &lt;port&gt; -u &lt;username&gt; -pw &lt;password&gt; -f &lt;xxx.csv&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ejemplo"><a class="anchor" href="#_ejemplo"></a>Ejemplo</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell"># Unix/OS X
+&gt; tools/import-csv.sh -h 127.0.0.1 -p 6667 -u root -pw root -f example-filename.csv
+
+# Windows
+&gt; tools\import-csv.bat -h 127.0.0.1 -p 6667 -u root -pw root -f example-filename.csv</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nota"><a class="anchor" href="#_nota"></a>Nota</h3>
+<div class="paragraph">
+<p>Tenga en cuenta que los siguientes caracteres especiales en los campos deben verificarse antes de importar:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>,</code>: los campos que contienen <code>,</code> deben estar entrecomillados por un par de <code>"</code> o un par de <code>'</code>.</p>
+</li>
+<li>
+<p>&#8220;:&#8221; en los campos debe reemplazarse por <code>\"</code> o los campos deben encerrarse entre <code>'</code>.</p>
+</li>
+<li>
+<p>&#8216;:&#8217; en los campos debe reemplazarse por <code>\'</code> o los campos deben encerrarse entre <code>"</code>.</p>
+</li>
+<li>
+<p>puede ingresar un formato de hora como <code>yyyy-MM-dd&#8217;T&#8217;HH:mm:ss</code>, <code>yyy-MM-dd HH:mm:ss</code>, o <code>yyyy-MM-dd&#8217;T&#8217;HH:mm:ss.SSSZ</code>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uso_de_export_csv_sh"><a class="anchor" href="#_uso_de_export_csv_sh"></a>Uso de export-csv.sh</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_sintaxis_2"><a class="anchor" href="#_sintaxis_2"></a>Sintaxis</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell"># Unix/OS X
+&gt; tools/export-csv.sh -h &lt;ip&gt; -p &lt;port&gt; -u &lt;username&gt; -pw &lt;password&gt; -td &lt;directory&gt; [-tf &lt;time-format&gt; -s &lt;sqlfile&gt;]
+
+# Windows
+&gt; tools\export-csv.bat -h &lt;ip&gt; -p &lt;port&gt; -u &lt;username&gt; -pw &lt;password&gt; -td &lt;directory&gt; [-tf &lt;time-format&gt; -s &lt;sqlfile&gt;]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Después de ejecutar el script de exportación, debe ingresar algunas consultas o especificar algunos archivos SQL. Si hay varios SQL en un archivo SQL, los SQL deben estar separados por saltos de línea.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ejemplo_de_archivo_sql"><a class="anchor" href="#_ejemplo_de_archivo_sql"></a>Ejemplo de Archivo SQL</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-SQL hljs" data-lang="SQL"># Unix/OS X
+select * from root.fit.d1
+select * from root.sg1.d1</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ejemplo_2"><a class="anchor" href="#_ejemplo_2"></a>Ejemplo</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell"># Unix/OS X
+&gt; tools/export-csv.sh -h 127.0.0.1 -p 6667 -u root -pw root -td ./
+# Or
+&gt; tools/export-csv.sh -h 127.0.0.1 -p 6667 -u root -pw root -td ./ -tf yyyy-MM-dd\ HH:mm:ss
+# Or
+&gt; tools/export-csv.sh -h 127.0.0.1 -p 6667 -u root -pw root -td ./ -s sql.txt
+# Or
+&gt; tools/export-csv.sh -h 127.0.0.1 -p 6667 -u root -pw root -td ./ -tf yyyy-MM-dd\ HH:mm:ss -s sql.txt
+
+# Windows
+&gt; tools/export-csv.bat -h 127.0.0.1 -p 6667 -u root -pw root -td ./
+# Or
+&gt; tools/export-csv.bat -h 127.0.0.1 -p 6667 -u root -pw root -td ./ -tf yyyy-MM-dd\ HH:mm:ss
+# Or
+&gt; tools/export-csv.bat -h 127.0.0.1 -p 6667 -u root -pw root -td ./ -s sql.txt
+# Or
+&gt; tools/export-csv.bat -h 127.0.0.1 -p 6667 -u root -pw root -td ./ -tf yyyy-MM-dd\ HH:mm:ss -s sql.txt</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nota_2"><a class="anchor" href="#_nota_2"></a>Nota</h3>
+<div class="paragraph">
+<p>Tenga en cuenta que si los campos exportados por la herramienta de exportación tienen los siguientes caracteres especiales:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>,</code>: el campo se incluirá entre <code>"</code>.</p>
+</li>
+<li>
+<p><code>"</code>: el campo estará encerrado por <code>"</code> y los caracteres originales <code>"</code> en el campo serán reemplazados por <code>\"</code>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
