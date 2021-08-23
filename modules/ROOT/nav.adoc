@@ -59,25 +59,26 @@ Guía de Usuario de IoTDB (V0.12.x)
 
 * Integración de Ecosistemas
      ** xref:integracion-de-ecosistemas/grafana.adoc[Grafana]
-     ** [Zeppelin-IoTDB]
-     ** [MapReduce TsFile]
-     ** [Spark TsFile]
-     ** [Spark IoTDB]
-     ** [Hive TsFile]
-     ** [Flink IoTDB]
-     ** [Flink TsFile]
-     ** [Escribir Datos en HDFS]
 
-Configuración de Clúster
-     Configuración de Clúster
+// ** [Zeppelin-IoTDB]
+// ** [MapReduce TsFile]
+// ** [Spark TsFile]
+// ** [Spark IoTDB]
+// ** [Hive TsFile]
+// ** [Flink IoTDB]
+// ** [Flink TsFile]
+// ** [Escribir Datos en HDFS]
+
+// Configuración de Clúster
+//      Configuración de Clúster
 
 * Preguntas Frecuentes
      ** xref:preguntas-frecuentes/preguntas-frecuentes.adoc[Preguntas Frecuentes]
 
-Apéndice
-     Manual de Configuración
-     Referencia SQL
-     Códigos de Estado
+* Apéndice
+     ** xref:apendice/manual-de-configuracion.adoc[Manual de Configuración]
+     ** xref:apendice/referencia-de-sql.adoc[Referencia SQL]
+     ** xref:apendice/codigos-de-estado.adoc[Códigos de Estado]
 
-Comparación con TSDB
-     Comparación
+// Comparación con TSDB
+//      Comparación
