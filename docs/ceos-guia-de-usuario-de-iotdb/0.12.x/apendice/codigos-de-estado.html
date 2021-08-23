@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Apéndice 3: Códigos de Estado :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/apendice/codigos-de-estado.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Colaboración de Edge y Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.html">Herramienta de Sincronización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integración de Ecosistemas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integracion-de-ecosistemas/grafana.html">Grafana</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preguntas Frecuentes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../preguntas-frecuentes/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Apéndice</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="manual-de-configuracion.html">Manual de Configuración</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="referencia-de-sql.html">Referencia SQL</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="codigos-de-estado.html">Códigos de Estado</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Apéndice</li>
+    <li><a href="codigos-de-estado.html">Códigos de Estado</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/apendice/codigos-de-estado.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Apéndice 3: Códigos de Estado</h1>
+<div class="paragraph">
+<p>El <strong>Código de Estado</strong> se introduce en la última versión. Una solución de muestra como IoTDB requiere registrar primero la serie temporal antes de escribir datos:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-SQL hljs" data-lang="SQL">try {
+    writeData();
+} catch (SQLException e) {
+  // the most case is that the time series does not exist
+  if (e.getMessage().contains("exist")) {
+      //However, using the content of the error message is not so efficient
+      registerTimeSeries();
+      //write data once again
+      writeData();
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Con Status Code, en lugar de escribir códigos como <code>if (e.getErrorMessage().contains("exist"))</code>, podemos simplemente usar <code>e.getErrorCode() == TSStatusCode.TIME_SERIES_NOT_EXIST_ERROR.getStatusCode()</code>.</p>
+</div>
+<div class="paragraph">
+<p>Aquí hay una lista de Códigos de Estado y mensajes relacionados:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Código de Estado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tipo de Estado</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Significado</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">200</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SUCCESS_STATUS</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">201</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STILL_EXECUTING_STATUS</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">202</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INVALID_HANDLE_STATUS</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">203</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INCOMPATIBLE_VERSION</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Versión incompatible</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">298</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NODE_DELETE_FAILED_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error al eliminar el nodo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">299</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ALIAS_ALREADY_EXIST_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El alias ya existe</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">300</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PATH_ALREADY_EXIST_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La ruta ya existe</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">301</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PATH_NOT_EXIST_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La ruta no existe</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">302</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UNSUPPORTED_FETCH_METADATA_OPERATION_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operación de recuperación de metadatos no admitida</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">303</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">METADATA_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error al tratar con metadatos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">305</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OUT_OF_TTL_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El tiempo de inserción es menor que el límite de tiempo TTL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">306</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CONFIG_ADJUSTER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La carga del sistema IoTDB es demasiado grande</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">307</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MERGE_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error de Meet al fusionar</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">308</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SYSTEM_CHECK_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error mientras se verifica el sistema</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">309</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SYNC_DEVICE_OWNER_CONFLICT_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conflicto de propietarios de dispositivos de sincronización</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">310</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SYNC_CONNECTION_EXCEPTION</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error al sincronizar la conexión</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">311</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STORAGE_GROUP_PROCESSOR_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con el procesador del grupo de almacenamiento</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">312</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STORAGE_GROUP_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con el grupo de almacenamiento</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">313</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STORAGE_ENGINE_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con el motor de almacenamiento</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">314</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TSFILE_PROCESSOR_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con el procesador TsFile</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">315</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PATH_ILLEGAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ruta ilegal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">316</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOAD_FILE_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error al cargar el archivo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">317</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STORAGE_GROUP_NOT_READY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El grupo de almacenamiento está en modo de recuperación, no listo para aceptar la operación de lectura/escritura</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EXECUTE_STATEMENT_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error de instrucción de ejecución</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">401</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SQL_PARSE_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error al analizar SQL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">402</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GENERATE_TIME_ZONE_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se encuentra el error al generar la zona horaria</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">403</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SET_TIME_ZONE_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error al configurar la zona horaria</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOT_STORAGE_GROUP_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El objeto operativo no es un grupo de almacenamiento</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">405</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QUERY_NOT_ALLOWED</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Las declaraciones de consulta no están permitidas</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">406</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AST_FORMAT_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con el formato AST</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">407</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOGICAL_OPERATOR_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con el operador lógico</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">408</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOGICAL_OPTIMIZE_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con optimización lógica</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">409</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UNSUPPORTED_FILL_TYPE_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con el tipo de relleno no admitido</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">410</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PATH_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con la ruta</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">411</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QUERY_PROCESS_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con el proceso de consulta</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">412</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WRITE_PROCESS_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error relacionado con la escritura de datos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">413</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WRITE_PROCESS_REJECT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error al escribir datos rechazados</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">414</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QUERY_ID_NOT_EXIST</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eliminar consulta con queryId inexistente</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INTERNAL_SERVER_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error interno del servidor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">501</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CLOSE_OPERATION_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error de encuentro en operación cercana</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">502</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">READ_ONLY_SYSTEM_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El sistema operativo es de solo lectura</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">503</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DISK_SPACE_INSUFFICIENT_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El espacio en disco es insuficiente</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">504</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">START_UP_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error al iniciar</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">505</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SHUT_DOWN_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error durante el apagado</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">506</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MULTIPLE_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error al ejecutar varias sentencias</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">600</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WRONG_LOGIN_PASSWORD_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El nombre de usuario o la contraseña son incorrectos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">601</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOT_LOGIN_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No ha iniciado sesión</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">602</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NO_PERMISSION_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No hay permisos para esta operación</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">603</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UNINITIALIZED_AUTH_ERROR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autorizador no inicializado</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">700</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PARTITION_NOT_READY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La tabla de particiones no está lista</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">701</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TIME_OUT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiempo de espera de la operación</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">702</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NO_LEADER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sin líder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">703</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UNSUPPORTED_OPERATION</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operación no admitida</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">704</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NODE_READ_ONLY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nodo de solo lectura</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">705</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CONSISTENCY_FAILURE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fallo en la comprobación de coherencia</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">706</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NO_CONNECTION</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No se puede obtener el error de conexión</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">707</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NEED_REDIRECTION</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Necesita dirección</p></td>
+</tr>
+</tbody>
+</table>
+<div class="literalblock">
+<div class="content">
+<pre>Todas las excepciones se refactorizan en la última versión extrayendo el mensaje uniforme en clases de excepción. Se agregan diferentes códigos de error a todas las excepciones. Cuando se detecta una excepción y se lanza una excepción de nivel superior, el código de error se mantendrá y pasará para que los usuarios conozcan el motivo detallado del error. También se agrega una clase de excepción base `ProcessException` para ser extendida por todas las excepciones.</pre>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

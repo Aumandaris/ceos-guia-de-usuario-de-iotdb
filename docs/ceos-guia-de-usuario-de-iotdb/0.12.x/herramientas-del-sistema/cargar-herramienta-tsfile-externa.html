@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cargar Herramienta TsFile Externa :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/herramientas-del-sistema/cargar-herramienta-tsfile-externa.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Colaboración de Edge y Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.html">Herramienta de Sincronización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integración de Ecosistemas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integracion-de-ecosistemas/grafana.html">Grafana</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preguntas Frecuentes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../preguntas-frecuentes/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Apéndice</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/manual-de-configuracion.html">Manual de Configuración</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/referencia-de-sql.html">Referencia SQL</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/codigos-de-estado.html">Códigos de Estado</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Herramientas del Sistema</li>
+    <li><a href="cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/herramientas-del-sistema/cargar-herramienta-tsfile-externa.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Cargar Herramienta TsFile Externa</h1>
+<div class="sect1">
+<h2 id="_introducción"><a class="anchor" href="#_introducción"></a>Introducción</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La herramienta load external TsFile permite a los usuarios cargar TsFiles, eliminar un TsFile o mover un TsFile al directorio de destino desde la instancia de Apache IoTDB en ejecución.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uso"><a class="anchor" href="#_uso"></a>Uso</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>El usuario envía comandos específicos al sistema Apache IoTDB a través de la herramienta Cli o JDBC para usar la herramienta.</p>
+</div>
+<div class="sect2">
+<h3 id="_cargar_tsfile"><a class="anchor" href="#_cargar_tsfile"></a>Cargar TsFile</h3>
+<div class="paragraph">
+<p>El comando para cargar TsFiles es <code>load "&lt;path/dir&gt;" [true/false] [storage group level]</code>.</p>
+</div>
+<div class="paragraph">
+<p>Este comando tiene dos usos:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Cargar un solo TsFile especificando una ruta de archivo (ruta absoluta).</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>El segundo parámetro indica la ruta del TsFile a cargar y el nombre del TsFile debe ajustarse a la convención de nomenclatura del TsFile, es decir, <code>{systemTime}-{versionNum}-{mergeNum} .tsfile</code>. Los parámetros tercero y cuarto son opcionales. Si los metadatos corresponden a la serie temporal en el TsFile que se va a cargar no existe, puede elegir si desea crear el esquema automáticamente. Si el tercer parámetro es verdadero, el esquema se crea automáticamente. Si el tercer parámetro es falso, no se creará el esquema. De forma predeterminada, se creará el esquema. Si el grupo de almacenamiento que corresponde al TsFile no existe, el usuario puede establecer el nivel del grupo de almacenamiento a través del cuarto parámetro. De forma predeterminada, utiliza el nivel de grupo de almacenamiento que se establece en <code>iotdb-engine.properties</code>. Si existe el archivo <code>.resource</code> correspondiente al archivo, se cargará en el directorio de datos y el motor de Apache IoTDB. De lo contrario, el archivo <code>.resource</code> correspondiente se volverá a generar a partir del archivo TsFile.</p>
+</div>
+<div class="paragraph">
+<p>Ejemplos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>load "/Users/Desktop/data/1575028885956-101-0.tsfile"</code></p>
+</li>
+<li>
+<p><code>load "/Users/Desktop/data/1575028885956-101-0.tsfile" false</code></p>
+</li>
+<li>
+<p><code>load "/Users/Desktop/data/1575028885956-101-0.tsfile" true</code></p>
+</li>
+<li>
+<p><code>load "/Users/Desktop/data/1575028885956-101-0.tsfile" true 1</code></p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Cargar un conjunto de archivos especificando la ruta de carpeta (ruta absoluta)</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>El segundo parámetro indica la ruta del TsFile a cargar y el nombre de los TsFiles debe ajustarse a la convención de nomenclatura de TsFile, es decir, <code>{systemTime}-{versionNum}-{mergeNum} .tsfile</code>. Los parámetros tercero y cuarto son opcionales. Cuando los metadatos correspondientes a la serie temporal en el TsFile a cargar no existen, puede elegir si desea crear el esquema automáticamente. Si el tercer parámetro es verdadero, el esquema se creará automáticamente. Si el tercer parámetro es falso, no se creará el esquema. De forma predeterminada, se creará el esquema. Cuando el grupo de almacenamiento correspondiente a TsFile no existe, el usuario puede establecer el nivel del grupo de almacenamiento a través del cuarto parámetro. De forma predeterminada, utilizará el nivel de grupo de almacenamiento que se establece en <code>iotdb-engine.properties</code>. Si el archivo <code>.resource</code> correspondiente al archivo existe, se cargarán en el directorio de datos y el motor de Apache IoTDB. De lo contrario, los archivos <code>.resource</code> correspondientes se volverán a generar a partir del archivo TsFile.</p>
+</div>
+<div class="paragraph">
+<p>Ejemplos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>load "/Users/Desktop/data"</code></p>
+</li>
+<li>
+<p><code>load "/Users/Desktop/data" false</code></p>
+</li>
+<li>
+<p><code>load "/Users/Desktop/data" true</code></p>
+</li>
+<li>
+<p><code>load "/Users/Desktop/data" true 1</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_eliminar_un_tsfile"><a class="anchor" href="#_eliminar_un_tsfile"></a>Eliminar un TsFile</h3>
+<div class="paragraph">
+<p>El comando para eliminar un TsFile es: <code>remove "&lt;path&gt;"</code>.</p>
+</div>
+<div class="paragraph">
+<p>Este comando elimina un TsFile especificando la ruta del archivo. La implementación específica es eliminar el TsFile y sus correspondientes archivos <code>.resource</code> y <code>.modification</code>.</p>
+</div>
+<div class="paragraph">
+<p>Ejemplos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>remove "root.vehicle/1575028885956-101-0.tsfile"</code></p>
+</li>
+<li>
+<p><code>remove "1575028885956-101-0.tsfile"</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mover_un_tsfile_a_un_directorio_de_destino"><a class="anchor" href="#_mover_un_tsfile_a_un_directorio_de_destino"></a>Mover un TsFile a un Directorio de Destino</h3>
+<div class="paragraph">
+<p>El comando para mover un TsFile al directorio de destino es: <code>move "&lt;path&gt;" "&lt;dir&gt;"</code>.</p>
+</div>
+<div class="paragraph">
+<p>Este comando mueve un TsFile a un directorio de destino especificando la ruta del TsFile y el directorio de destino (ruta absoluta). La implementación específica es eliminar el archivo TsFile del motor y mover el archivo TsFile y su archivo <code>.resource</code> correspondiente al directorio de destino.</p>
+</div>
+<div class="paragraph">
+<p>Ejemplos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>move "root.vehicle/1575029224130-101-0.tsfile" "/data/data/tmp"</code></p>
+</li>
+<li>
+<p><code>move "1575029224130-101-0.tsfile" "/data/data/tmp"</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

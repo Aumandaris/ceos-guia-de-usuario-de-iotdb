@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Grafana-IoTDB :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/integracion-de-ecosistemas/grafana.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../api-interfaz-de-programacion-de-aplicaciones/api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Colaboración de Edge y Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.html">Herramienta de Sincronización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integración de Ecosistemas</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="grafana.html">Grafana</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preguntas Frecuentes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../preguntas-frecuentes/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Apéndice</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/manual-de-configuracion.html">Manual de Configuración</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/referencia-de-sql.html">Referencia SQL</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/codigos-de-estado.html">Códigos de Estado</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>Integración de Ecosistemas</li>
+    <li><a href="grafana.html">Grafana</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/integracion-de-ecosistemas/grafana.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Grafana-IoTDB</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Grafana es una herramienta de monitorización y visualización de métricas de volumen de código abierto, que se puede utilizar para mostrar datos de series de tiempo y análisis de tiempo de ejecución de aplicaciones. Grafana admite Graphite, InfluxDB y otras bases de datos de series temporales importantes como fuentes de datos. IoTDB-Grafana es un conector que desarrollamos para mostrar datos de series de tiempo en IoTDB leyendo datos de IoTDB y los enviamos a Grafana (<a href="https://grafana.com/" class="bare">https://grafana.com/</a>). Antes de usar esta herramienta, asegúrese de que Grafana e IoTDB estén instalados e iniciados correctamente.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_instalación_e_implementación_de_grafana"><a class="anchor" href="#_instalación_e_implementación_de_grafana"></a>Instalación e Implementación de Grafana</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_instalar_grafana"><a class="anchor" href="#_instalar_grafana"></a>Instalar Grafana</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Descarga url: <a href="https://grafana.com/grafana/download" class="bare">https://grafana.com/grafana/download</a></p>
+</li>
+<li>
+<p>Versión &gt;= 4.4.1</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_instalar_el_complemento_de_fuente_de_datos"><a class="anchor" href="#_instalar_el_complemento_de_fuente_de_datos"></a>Instalar el Complemento de Fuente de Datos</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Nombre del complemento: simple-json-datasource</p>
+</li>
+<li>
+<p>Descarga url: <a href="https://github.com/grafana/simple-json-datasource" class="bare">https://github.com/grafana/simple-json-datasource</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Después de descargar este complemento, use la herramienta grafana-cli para instalar SimpleJson desde la línea de comandos:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>grafana-cli plugins install grafana-simple-json-datasource</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Alternativamente, descargue manualmente el archivo .zip y descomprímalo en el directorio de complementos de grafana.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>{grafana-install-directory}\data\plugins\</code> (Windows)</p>
+</li>
+<li>
+<p><code>/var/lib/grafana/plugins</code> (Linux)</p>
+</li>
+<li>
+<p><code>/usr/local/var/lib/grafana/plugins</code> (Mac)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_iniciar_grafana"><a class="anchor" href="#_iniciar_grafana"></a>Iniciar Grafana</h3>
+<div class="paragraph">
+<p>Si se usa Unix, Grafana se iniciará automáticamente después de la instalación, o puede ejecutar el comando de inicio <code>sudo service grafana-server start</code>. Ver más información [aquí].</p>
+</div>
+<div class="paragraph">
+<p>Si se usa Mac y homebrew para instalar Grafana, puede usar <code>homebrew</code> para iniciar Grafana. Primero asegúrese de que <code>homebrew</code> / services esté instalado ejecutando <code>brew tap homebrew/services</code>, luego inicie Grafana usando: <code>brew services start grafana</code>. Ver más información [aquí.</p>
+</div>
+<div class="paragraph">
+<p>Si se usa Windows, inicie Grafana ejecutando grafana-server.exe, ubicado en el directorio bin, preferiblemente desde la línea de comandos. Ver más información [aquí].</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_instalación_de_iotdb"><a class="anchor" href="#_instalación_de_iotdb"></a>Instalación de IoTDB</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vea <a href="https://github.com/apache/iotdb" class="bare">https://github.com/apache/iotdb</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_instalación_de_iotdb_grafana"><a class="anchor" href="#_instalación_de_iotdb_grafana"></a>Instalación de IoTDB-Grafana</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">git clone https://github.com/apache/iotdb.git</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_iniciar_iotdb_grafana"><a class="anchor" href="#_iniciar_iotdb_grafana"></a>Iniciar IoTDB-Grafana</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Opcion uno</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Importe el proyecto completo, después de instalar la dependencia de maven, directamente ejecute el directorio <code>iotdb/grafana/rc/main/java/org/apache/iotdb/web/grafana</code> <code>TsfileWebDemoApplication.java</code>, este conector Grafana es desarrollado por springboot</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Opcion dos</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>En el directorio <code>/grafana/target/</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">cd iotdb
+mvn clean package -pl grafana -am -Dmaven.test.skip=true
+cd grafana/target
+java -jar iotdb-grafana-{version}.war</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si se muestra el siguiente resultado, el conector iotdb-grafana se activó correctamente.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Shell hljs" data-lang="Shell">    ----
+    $ java -jar iotdb-grafana-{version}.war</code></pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><em><em>_          _            </em> _ _
+/\\ / <em></em>'_ </em> _ <em>(</em>)_ <em>  </em> _ \ \ \ \
+( ( )<em>_</em> | '_ | '<em>| | '</em> \/ <em>` | \ \ \ \
+\\/  __</em>)| |<em>)| | | | | || (</em>| |  ) ) ) )
+'  |<em><em>_| .</em>|</em>| |<em>|</em>| |<em>_</em>, | / / / /
+=========|<em>|==============|__</em>/=/<em>/</em>/_/</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"></dt>
+<dd>
+<p>Spring Boot ::        (v1.5.4.RELEASE)
+&#8230;&#8203;
+----</p>
+</dd>
+</dl>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Para configurar las propiedades, mueva <code>grafana/src/main/resources/application.properties</code> al mismo directorio que el paquete war (<code>grafana/target</code>)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_explore_en_grafana"><a class="anchor" href="#_explore_en_grafana"></a>Explore en Grafana</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>El puerto predeterminado de Grafana es 3000, consulte <code><a href="http://localhost:3000/" class="bare">http://localhost:3000/</a></code></p>
+</div>
+<div class="paragraph">
+<p>El nombre de usuario y la contraseña son <code>admin</code> de forma predeterminada.</p>
+</div>
+<div class="sect2">
+<h3 id="_agregar_fuente_de_datos"><a class="anchor" href="#_agregar_fuente_de_datos"></a>Agregar Fuente de Datos</h3>
+<div class="paragraph">
+<p>Seleccione <code>Data Sources</code> y luego <code>Add data source</code>, seleccione <code>SimpleJson</code> en <code>Type</code> y la <code>URL</code> es <code>http: // localhost:8888</code>. Después de eso, asegúrese de que se haya iniciado IoTDB, haga clic en <code>Save &amp; Test</code> y se mostrará "Data Source is working" para indicar que la configuración se ha realizado correctamente.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/imagen-26.png" alt="imagen 26">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/imagen-27.png" alt="imagen 27">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_diseño_en_tablero"><a class="anchor" href="#_diseño_en_tablero"></a>Diseño en Tablero</h3>
+<div class="paragraph">
+<p>Agregue diagramas en el tablero y personalice su consulta. Ver <a href="http://docs.grafana.org/guides/getting_started/" class="bare">http://docs.grafana.org/guides/getting_started/</a></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/imagen-28.png" alt="imagen 28">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_config_grafana"><a class="anchor" href="#_config_grafana"></a><code>config grafana</code></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code># ip and port of IoTDB
+spring.datasource.url=jdbc:iotdb://127.0.0.1:6667/
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=org.apache.iotdb.jdbc.IoTDBDriver
+server.port=8888
+# Use this value to set timestamp precision as "ms", "us" or "ns", which must to be same with the timestamp
+# precision of Apache IoTDB engine.
+timestamp_precision=ms
+
+# Use this value to set down sampling true/false
+isDownSampling=true
+# defaut sampling intervals
+interval=1m
+# aggregation function to use to downsampling the data (int, long, float, double)
+# COUNT, FIRST_VALUE, LAST_VALUE, MAX_TIME, MAX_VALUE, AVG, MIN_TIME, MIN_VALUE, NOW, SUM
+continuous_data_function=AVG
+# aggregation function to use to downsampling the data (boolean, string)
+# COUNT, FIRST_VALUE, LAST_VALUE, MAX_TIME, MIN_TIME, NOW
+discrete_data_function=LAST_VALUE</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>La información de configuración específica del intervalo es la siguiente</p>
+</div>
+<div class="paragraph">
+<p>&lt;1h: sin muestreo</p>
+</div>
+<div class="paragraph">
+<p>1h ~ 1d: intervalos = 1m</p>
+</div>
+<div class="paragraph">
+<p>1d ~ 30d: intervalos = 1h</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>30d: intervalos = 1d</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Después de la configuración, vuelva a ejecutar el paquete war</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>java -jar iotdb-grafana-{version}.war</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

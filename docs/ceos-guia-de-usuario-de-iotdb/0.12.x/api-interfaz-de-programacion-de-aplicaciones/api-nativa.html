@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>API Nativa de Java :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/api-interfaz-de-programacion-de-aplicaciones/api-nativa.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Colaboración de Edge y Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.html">Herramienta de Sincronización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integración de Ecosistemas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integracion-de-ecosistemas/grafana.html">Grafana</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preguntas Frecuentes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../preguntas-frecuentes/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Apéndice</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/manual-de-configuracion.html">Manual de Configuración</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/referencia-de-sql.html">Referencia SQL</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/codigos-de-estado.html">Códigos de Estado</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>API (Interfaz de Programación de Aplicaciones)</li>
+    <li><a href="api-nativa.html">API Nativa</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/api-interfaz-de-programacion-de-aplicaciones/api-nativa.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">API Nativa de Java</h1>
+<div class="sect1">
+<h2 id="_dependencias"><a class="anchor" href="#_dependencias"></a>Dependencias</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>JDK &gt;= 1.8</p>
+</li>
+<li>
+<p>Maven &gt;= 3.6</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_instalación"><a class="anchor" href="#_instalación"></a>Instalación</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En el directorio raíz:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>mvn clean install -pl session -am -DskipTests</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uso_de_la_api_nativa_de_java_de_iotdb_con_maven"><a class="anchor" href="#_uso_de_la_api_nativa_de_java_de_iotdb_con_maven"></a>Uso de la API Nativa de Java de IoTDB con Maven</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>&lt;dependencies&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.iotdb&lt;/groupId&gt;
+      &lt;artifactId&gt;iotdb-session&lt;/artifactId&gt;
+      &lt;version&gt;0.12.0&lt;/version&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api_nativas"><a class="anchor" href="#_api_nativas"></a>API Nativas</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Aquí mostramos las interfaces de uso común y sus parámetros en la API Nativa:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Inicializar una sesión</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>Session(String host, int rpcPort)
+
+Session(String host, String rpcPort, String username, String password)
+
+Session(String host, int rpcPort, String username, String password)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Abrir una sesión</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>Session.open()</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cerrar una Sesión</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>​Session.close()</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Establecer grupo de almacenamiento</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void setStorageGroup(String storageGroupId)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Eliminar uno o varios grupos de almacenamiento</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void deleteStorageGroup(String storageGroup)
+void deleteStorageGroups(List&lt;String&gt; storageGroups)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Crear una o varias series temporales</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void createTimeseries(String path, TSDataType dataType,
+      TSEncoding encoding, CompressionType compressor, Map&lt;String, String&gt; props,
+      Map&lt;String, String&gt; tags, Map&lt;String, String&gt; attributes, String measurementAlias)
+
+void createMultiTimeseries(List&lt;String&gt; paths, List&lt;TSDataType&gt; dataTypes,
+      List&lt;TSEncoding&gt; encodings, List&lt;CompressionType&gt; compressors,
+      List&lt;Map&lt;String, String&gt;&gt; propsList, List&lt;Map&lt;String, String&gt;&gt; tagsList,
+      List&lt;Map&lt;String, String&gt;&gt; attributesList, List&lt;String&gt; measurementAliasList)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Eliminar una o varias series temporales</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void deleteTimeseries(String path)
+void deleteTimeseries(List&lt;String&gt; paths)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Eliminar datos antes o iguales a una marca de tiempo de una o varias series de tiempo</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void deleteData(String path, long time)
+void deleteData(List&lt;String&gt; paths, long time)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Insertar un registro, que contiene varios valores de medición de un dispositivo en una marca de tiempo. Sin la información de tipos, el servidor tiene que realizar una inferencia de tipos, lo que puede costar algo de tiempo.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertRecord(String deviceId, long time, List&lt;String&gt; measurements, List&lt;String&gt; values)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Insertar una tableta, que son varias filas de un dispositivo, cada fila tiene las mismas medidas</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertTablet(Tablet tablet)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Insertar múltiples tabletas</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertTablets(Map&lt;String, Tablet&gt; tablet)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Insertar varios registros. Sin la información de tipos, el servidor tiene que realizar una inferencia de tipos, lo que puede costar algo de tiempo.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertRecords(List&lt;String&gt; deviceIds, List&lt;Long&gt; times,
+                   List&lt;List&lt;String&gt;&gt; measurementsList, List&lt;List&lt;String&gt;&gt; valuesList)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Insertar un registro, que contiene varios valores de medición de un dispositivo en una marca de tiempo. Con la información de tipos, el servidor no necesita hacer inferencias de tipos, lo que conduce a un mejor rendimiento.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertRecord(String deviceId, long time, List&lt;String&gt; measurements,
+   List&lt;TSDataType&gt; types, List&lt;Object&gt; values)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Insertar varios registros. Con la información de tipos, el servidor no necesita hacer inferencias de tipos, lo que conduce a un mejor rendimiento.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertRecords(List&lt;String&gt; deviceIds, List&lt;Long&gt; times,
+    List&lt;List&lt;String&gt;&gt; measurementsList, List&lt;List&lt;TSDataType&gt;&gt; typesList,
+    List&lt;List&lt;Object&gt;&gt; valuesList)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Inserte varios registros que pertenezcan al mismo dispositivo. Con la información de tipos, el servidor no necesita hacer inferencias de tipos, lo que conduce a un mejor rendimiento.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>Session.open()</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Consulta de datos brutos. El intervalo de tiempo incluye startTime y excluye endTime</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>SessionDataSet executeRawDataQuery(List&lt;String&gt; paths, long startTime, long endTime)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ejecutar declaración de consulta</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>SessionDataSet executeQueryStatement(String sql)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ejecutar declaración sin consulta</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void executeNonQueryStatement(String sql)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api_nativas_para_perfilar_el_costo_de_la_red"><a class="anchor" href="#_api_nativas_para_perfilar_el_costo_de_la_red"></a>API Nativas para Perfilar el Costo de la Red</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Probar el costo de la red y del cliente de insertRecords. Este método NO inserta datos en la base de datos y el servidor simplemente regresa después de aceptar la solicitud, este método debe usarse para probar otros costos de tiempo en el cliente</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void testInsertRecords(List&lt;String&gt; deviceIds, List&lt;Long&gt; times,
+              List&lt;List&lt;String&gt;&gt; measurementsList, List&lt;List&lt;String&gt;&gt; valuesList)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ó</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void testInsertRecords(List&lt;String&gt; deviceIds, List&lt;Long&gt; times,
+    List&lt;List&lt;String&gt;&gt; measurementsList, List&lt;List&lt;TSDataType&gt;&gt; typesList,
+    List&lt;List&lt;Object&gt;&gt; valuesList)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Probar la red y el costo del cliente de insertRecordsOfOneDevice. Este método NO inserta datos en la base de datos y el servidor simplemente regresa después de aceptar la solicitud, este método debe usarse para probar otros costos de tiempo en el cliente</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void testInsertRecordsOfOneDevice(String deviceId, List&lt;Long&gt; times,
+    List&lt;List&lt;String&gt;&gt; measurementsList, List&lt;List&lt;TSDataType&gt;&gt; typesList,
+    List&lt;List&lt;Object&gt;&gt; valuesList)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Probar la red y el costo del cliente de insertRecord. Este método NO inserta datos en la base de datos y el servidor simplemente regresa después de aceptar la solicitud, este método debe usarse para probar otros costos de tiempo en el cliente</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void testInsertRecord(String deviceId, long time, List&lt;String&gt; measurements, List&lt;String&gt; values)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ó</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void testInsertRecord(String deviceId, long time, List&lt;String&gt; measurements,
+    List&lt;TSDataType&gt; types, List&lt;Object&gt; values)</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Probar la red y el costo del cliente de insertTablet. Este método NO inserta datos en la base de datos y el servidor simplemente regresa después de aceptar la solicitud, este método debe usarse para probar otros costos de tiempo en el cliente</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void testInsertTablet(Tablet tablet)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ejemplo_de_codificación"><a class="anchor" href="#_ejemplo_de_codificación"></a>Ejemplo de Codificación</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Para obtener más información de las siguientes interfaces, consulte session/src/main/java/org/apache/iotdb/session/Session.java</p>
+</div>
+<div class="paragraph">
+<p>El código de muestra del uso de estas interfaces se encuentra en example/session/src/main/java/org/apache/iotdb/SessionExample.java, que proporciona un ejemplo de cómo abrir una sesión de IoTDB, ejecutar una inserción por lotes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_grupo_de_sesiones_para_api_nativa"><a class="anchor" href="#_grupo_de_sesiones_para_api_nativa"></a>Grupo de Sesiones para API Nativa</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Proporcionamos un grupo de conexiones (`SessionPool) para la API nativa. Usando la interfaz, necesita definir el tamaño del grupo.</p>
+</div>
+<div class="paragraph">
+<p>Si no puede obtener una conexión de sesión en 60 segundos, hay un registro de advertencia, pero el programa se bloqueará.</p>
+</div>
+<div class="paragraph">
+<p>Si una sesión ha finalizado una operación, se volverá a poner en el grupo automáticamente. Si se interrumpe la conexión de una sesión, la sesión se eliminará automáticamente y el grupo intentará crear una nueva sesión y rehacer la operación.</p>
+</div>
+<div class="paragraph">
+<p>Para operaciones de consulta:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Cuando se usa SessionPool para consultar datos, el conjunto de resultados es <code>SessionDataSetWrapper</code>;</p>
+</li>
+<li>
+<p>Dado un <code>SessionDataSetWrapper</code>, si no ha escaneado todos los datos que contiene y deja de usarlo, debe llamar a `SessionPool.closeResultSet (wrapper)`manualmente;</p>
+</li>
+<li>
+<p>Cuando llama a <code>hasNext()</code> y <code>next()</code> de un <code>SessionDataSetWrapper</code> y hay una excepción, entonces debe llamar a <code>SessionPool.closeResultSet (wrapper)</code> manualmente;</p>
+</li>
+<li>
+<p>Puede llamar a <code>getColumnNames()</code> de <code>SessionDataSetWrapper</code> para obtener los nombres de columna del resultado de la consulta;</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Ejemplos: <code>session/src/test/java/org/apache/iotdb/session/pool/SessionPoolTest.java</code></p>
+</div>
+<div class="paragraph">
+<p>O ejemplo <code>example/session/src/main/java/org/apache/iotdb/SessionPoolExample.java</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nuevas_interfaces"><a class="anchor" href="#_nuevas_interfaces"></a>Nuevas Interfaces</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void open(boolean enableRPCCompression)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Abra una sesión, con un parámetro para especificar si habilita la compresión RPC. Preste atención a que este estado de compresión RPC del cliente debe cumplir con el estado del servidor IoTDB</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertRecord(String deviceId, long time, List&lt;String&gt; measurements,
+      List&lt;TSDataType&gt; types, List&lt;Object&gt; values)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Inserte un registro, de manera que el usuario tenga que proporcionar la información de tipo de cada medición, que es diferente de la interfaz original insertRecord(). Los valores deben proporcionarse en sus tipos primitivos. Esta interfaz es más competente que la que no tiene parámetros de tipo.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertRecords(List&lt;String&gt; deviceIds, List&lt;Long&gt; times, List&lt;List&lt;String&gt;&gt; measurementsList,
+                   List&lt;List&lt;TSDataType&gt;&gt; typesList, List&lt;List&lt;Object&gt;&gt; valuesList)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Inserte varios registros con parámetros de tipo. Esta interfaz es más competente que la que no tiene parámetros de tipo.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertTablet(Tablet tablet, boolean sorted)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Una interfaz insertTablet() adicional que proporciona un parámetro "sorted" que indica si la tableta está en orden. Una tableta clasificada puede acelerar el proceso de inserción.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertTablets(Map&lt;String, Tablet&gt; tablets)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Un nuevo insertTablets() para insertar varias tabletas.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void insertTablets(Map&lt;String, Tablet&gt; tablets, boolean sorted)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>insertTablets() con un parámetro adicional "sorted".</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void testInsertRecord(String deviceId, long time, List&lt;String&gt; measurements, List&lt;TSDataType&gt; types,
+                      List&lt;Object&gt; values)
+void testInsertRecords(List&lt;String&gt; deviceIds, List&lt;Long&gt; times, List&lt;List&lt;String&gt;&gt; measurementsList,
+                      List&lt;List&lt;TSDataType&gt;&gt; typesList, List&lt;List&lt;Object&gt;&gt; valuesList)
+void testInsertTablet(Tablet tablet, boolean sorted)
+void testInsertTablets(Map&lt;String, Tablet&gt; tablets)
+void testInsertTablets(Map&lt;String, Tablet&gt; tablets, boolean sorted)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Las interfaces anteriores se agregaron recientemente para probar la capacidad de respuesta de las nuevas interfaces de inserción.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void createTimeseries(String path, TSDataType dataType, TSEncoding encoding, CompressionType compressor,
+                      Map&lt;String, String&gt; props, Map&lt;String, String&gt; tags, Map&lt;String, String&gt; attributes,
+                      String measurementAlias)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Cree una serie temporal con ruta, tipo de datos, codificación y compresión. Además, los usuarios pueden proporcionar accesorios, etiquetas, atributos y measurementAlias。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>void createMultiTimeseries(List&lt;String&gt; paths, List&lt;TSDataType&gt; dataTypes, List&lt;TSEncoding&gt; encodings,
+                           List&lt;CompressionType&gt; compressors, List&lt;Map&lt;String, String&gt;&gt; propsList,
+                           List&lt;Map&lt;String, String&gt;&gt; tagsList, List&lt;Map&lt;String, String&gt;&gt; attributesList,
+                           List&lt;String&gt; measurementAliasList)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Cree múltiples series temporales con un solo método. Los usuarios pueden proporcionar accesorios, etiquetas, atributos y alias de medición, así como información detallada sobre series de tiempo.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>boolean checkTimeseriesExists(String path)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Agregue un método para verificar si existe una serie temporal específica.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>public Session(String host, int rpcPort, String username, String password,
+      boolean isEnableCacheLeader)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Abra una sesión y especifica si la caché de Leader está habilitada. Tenga en cuenta que esta interfaz mejora el rendimiento para IoTDB distribuido, pero agrega menos costos para el cliente para IoTDB independiente.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

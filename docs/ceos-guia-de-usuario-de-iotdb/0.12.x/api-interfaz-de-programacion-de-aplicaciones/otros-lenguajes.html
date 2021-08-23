@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Otros Lenguajes :: Guía de Usuario de IoTDB</title>
+    <link rel="canonical" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html/ceos-guia-de-usuario-de-iotdb/0.12.x/api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://aumandaris.github.io/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/index.html">
+        <img src="/ceos-guia-de-usuario-de-iotdb/ceos-guia-de-usuario-de-iotdb/0.12.x/_images/ceos-logo.png" width="40">
+        <span>Guía de Usuario de IoTDB<span>     
+      </a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ceos-guia-de-usuario-de-iotdb" data-version="0.12.x">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Guía de Usuario de IoTDB</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introducción a IoTDB</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/que-es-iotdb.html">Qué es IoTDB</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/arquitectura.html">Arquitectura</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#introduccion-a-iotdb/escenario.adoc">Escenarios</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/caracteristicas.html">Características</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduccion-a-iotdb/publicacion.html">Publicación</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inicio Rápido</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/inicio-rapido.html">Inicio Rápido</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/configuracion-de-ruta-de-almacenamiento.html">Configuración de Ruta de Almacenamiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../inicio-rapido/obtener-archivos-binarios-de-iotdb.html">Obtener Archivos Binarios de IoTDB</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepto de Datos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/modelo-de-datos-y-terminologia.html">Modelo de Datos y Terminología</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/tipo-de-datos.html">Tipo de Datos</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/codificacion.html">Codificación</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/compresion.html">Compresión</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepto-de-datos/sdt.html">SDT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interfaz de Línea de Comandos</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../interfaz-de-linea-de-comandos/interfaz-de-linea-de-comandos.html">Interfaz de Línea de Comandos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Gestión de la Administración</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../gestion-de-la-administracion/administracion.html">Administración</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lenguaje IoTDB-SQL</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/ddl-lenguaje-de-definicion-de-datos.html">DDL (Lenguaje de Definición de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/dml-lenguaje-de-manipulacion-de-datos.html">DML (Lenguaje de Manipulación de Datos)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../lenguaje-iotdb-sql/comando-de-mantenimiento.html">Comando de Mantenimiento</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API (Interfaz de Programación de Aplicaciones)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="jdbc.html">JDBC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="api-nativa.html">API Nativa</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="otros-lenguajes.html">Otros Lenguajes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="api-tsfile.html">API TsFile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">UDF (Función Definida por el Usuario)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../udf-funcion-definida-por-el-usuario/udf-funcion-definida-por-el-usuario.html">Función Definida por el Usuario</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Protocolo de Servicio de Comunicación</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/thrift.html">Thrift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../protocolo-de-servicio-de-comunicacion/mqtt.html">MQTT</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Herramientas del Sistema</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/cargar-herramienta-tsfile-externa.html">Cargar Archivo Ts Externo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-seguimiento-del-rendimiento.html">Herramienta de Seguimiento del Rendimiento</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-csv.html">Herramienta CSV</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramientas-de-monitoreo-y-registro.html">Herramientas de Monitorep y Registro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-jmx.html">Herramienta JMX</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-mlogparser.html">Herramienta MLogParser</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-node.html">Herramienta Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-visualizacion-del-historial-de-consultas.html">Herramienta de Visualización del Historial de Consultas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../herramientas-del-sistema/herramienta-de-marca-de-agua.html">Herramienta de Marca de Agua</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Colaboración de Edge y Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../colaboracion-de-edge-y-cloud/herramienta-de-sincronizacion.html">Herramienta de Sincronización</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integración de Ecosistemas</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integracion-de-ecosistemas/grafana.html">Grafana</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preguntas Frecuentes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../preguntas-frecuentes/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Apéndice</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/manual-de-configuracion.html">Manual de Configuración</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/referencia-de-sql.html">Referencia SQL</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../apendice/codigos-de-estado.html">Códigos de Estado</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Guía de Usuario de IoTDB</span>
+    <span class="version">0.12.x</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Guía de Usuario de IoTDB</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.12.x</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Guía de Usuario de IoTDB</a></li>
+    <li>API (Interfaz de Programación de Aplicaciones)</li>
+    <li><a href="otros-lenguajes.html">Otros Lenguajes</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Aumandaris/ceos-guia-de-usuario-de-iotdb/edit/master/modules/ROOT/pages/api-interfaz-de-programacion-de-aplicaciones/otros-lenguajes.adoc">Editar esta página</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Otros Lenguajes</h1>
+<div class="sect1">
+<h2 id="_dependencias_nativas_de_python"><a class="anchor" href="#_dependencias_nativas_de_python"></a>Dependencias Nativas de Python</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_dependencias"><a class="anchor" href="#_dependencias"></a>Dependencias</h3>
+<div class="paragraph">
+<p>Se prefiere python3.7 o posterior.</p>
+</div>
+<div class="paragraph">
+<p>Tiene que instalar Thrift (0.11.0 o posterior) para compilar nuestro archivo thrift en código Python. A continuación se muestra el tutorial oficial de instalación:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>http://thrift.apache.org/docs/install/</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_instalación"><a class="anchor" href="#_instalación"></a>Instalación</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Opción 1: pip install</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Puede encontrar el paquete de API de Cliente Python de Apache IoTDB en <a href="https://pypi.org/project/apache-iotdb/" class="bare">https://pypi.org/project/apache-iotdb/</a>.</p>
+</div>
+<div class="paragraph">
+<p>El comando de descarga es:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>pip install apache-iotdb</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Opción 2: uso básico de thrift</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Opcionalmente, si conoce el uso básico de thrift, puede descargar el archivo fuente de thrift en <code>thrift\src\main\thrift\rpc.thrift</code>, y simplemente ejecute <code>thrift -gen py -out ./target/iotdb rpc.thrift</code> para generar la biblioteca de Python.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ejemplo_de_codificación"><a class="anchor" href="#_ejemplo_de_codificación"></a>Ejemplo de Codificación</h3>
+<div class="paragraph">
+<p>Proporcionamos un ejemplo de cómo usar la biblioteca de ahorro para conectarse a IoTDB en <code>client-py/src /SessionExample.py</code>, léalo detenidamente antes de escribir su propio código.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_interfaces_nativas_de_c"><a class="anchor" href="#_interfaces_nativas_de_c"></a>Interfaces Nativas de C++</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_dependencias_2"><a class="anchor" href="#_dependencias_2"></a>Dependencias</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Java 8+</p>
+</li>
+<li>
+<p>Maven 3.5+</p>
+</li>
+<li>
+<p>Flexionar</p>
+</li>
+<li>
+<p>Bison 2.7+</p>
+</li>
+<li>
+<p>Aumentar</p>
+</li>
+<li>
+<p>OpenSSL 1.0+</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_instalación_2"><a class="anchor" href="#_instalación_2"></a>Instalación</h3>
+<div class="paragraph">
+<p>La compilación del cliente CPP requiere que se construya primero el módulo "compile-tools". "compile-tools" es el principal responsable de la creación de bibliotecas Thrift localmente.</p>
+</div>
+<div class="sect3">
+<h4 id="_compilar_thrift_en_macos"><a class="anchor" href="#_compilar_thrift_en_macos"></a>Compilar Thrift en MacOS</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Bison</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Bison 2.3 está preinstalado en OSX, pero esta versión es demasiado baja. Al compilar Thrift con Bison 2.3, aparecería el siguiente error:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>invalid directive: '%code'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Para tal caso, actualice <code>Bison</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>brew install bison
+brew link bison --force</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Luego, debe decirle al sistema operativo dónde está el nuevo Bison.</p>
+</div>
+<div class="paragraph">
+<p>Para usuarios de Bash:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>echo 'export PATH="/usr/local/opt/bison/bin:$PATH"' &gt;&gt; ~/.bash_profile</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Para usuarios de zsh:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>echo 'export PATH="/usr/local/opt/bison/bin:$PATH"' &gt;&gt; ~/.zshrc</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Boost</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Asegúrese de que haya una versión relativamente nueva de Boost lista en su máquina. Si no hay Boost disponible, instale la última versión de Boost:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>brew install boost
+brew link boost</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OpenSSL</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Asegúrese de que las bibliotecas de Openssl se hayan instalado en su Mac. La ruta predeterminada de búsqueda de archivos de inclusión de Openssl es "/usr/local/opt/openssl/include". Si los archivos de encabezado de Openssl no se pueden encontrar al compilar Thrift, agregue la opción</p>
+</div>
+<div class="paragraph">
+<p><code>-Dopenssl.include.dir=""</code></p>
+</div>
+<div class="paragraph">
+<p>para especificar el directorio de instalación de OpenSSL en su Mac.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_compilar_thrift_en_linux"><a class="anchor" href="#_compilar_thrift_en_linux"></a>Compilar Thrift en Linux</h4>
+<div class="paragraph">
+<p>Para instalar todas las dependencias, ejecute:</p>
+</div>
+<div class="paragraph">
+<p>Debian/Ubuntu:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>sudo apt-get install gcc g++ bison flex libboost-all-dev</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>CentOS:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>yum install gcc g++ bison flex boost-devel</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_compilar_thrift_en_windows"><a class="anchor" href="#_compilar_thrift_en_windows"></a>Compilar Thrift en Windows</h4>
+<div class="paragraph">
+<p>Asegúrese de que un entorno de construcción de Windows C++ completo esté preparado en su máquina. MSVC, MinGW&#8230;&#8203; son compatibles.</p>
+</div>
+<div class="paragraph">
+<p>Si está utilizando MS Visual Studio, recuerde instalar Visual Studio C/C++ IDE y el compilador (compatible con CMake, Clang, MinGW).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Flex y Bison Windows Flex y Bison se pueden descargar de SourceForge: <a href="https://sourceforge.net/projects/winflexbison/" class="bare">https://sourceforge.net/projects/winflexbison/</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Después de la descarga, cambie el nombre de los ejecutables a flex.exe y bison.exe y agréguelos a las variables de entorno "PATH".</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Boost For Boost, descárguelo del sitio web oficial: <a href="https://www.boost.org/users/download/" class="bare">https://www.boost.org/users/download/</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Luego, compile Boost ejecutando bootstrap.bat y b2.exe.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>bootstrap.bat
+.\b2.exe</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Para ayudar a CMake a encontrar sus bibliotecas Boost en Windows, debe configurar <code>-Dboost.include.dir=${your boost header folder} -Dboost.library.dir=${your boost lib (stage) folder}</code> en su comando de compilación mvn.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_generador_de_cmake_en_windows"><a class="anchor" href="#_generador_de_cmake_en_windows"></a>Generador de Cmake en Windows</h4>
+<div class="paragraph">
+<p>Existe una larga lista de generadores Cmake compatibles en el entorno Windows.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>  Visual Studio 16 2019        = Generates Visual Studio 2019 project files.
+                                 Use -A option to specify architecture.
+  Visual Studio 15 2017 [arch] = Generates Visual Studio 2017 project files.
+                                 Optional [arch] can be "Win64" or "ARM".
+  Visual Studio 14 2015 [arch] = Generates Visual Studio 2015 project files.
+                                 Optional [arch] can be "Win64" or "ARM".
+  Visual Studio 12 2013 [arch] = Generates Visual Studio 2013 project files.
+                                 Optional [arch] can be "Win64" or "ARM".
+  Visual Studio 11 2012 [arch] = Generates Visual Studio 2012 project files.
+                                 Optional [arch] can be "Win64" or "ARM".
+  Visual Studio 10 2010 [arch] = Generates Visual Studio 2010 project files.
+                                 Optional [arch] can be "Win64" or "IA64".
+  Visual Studio 9 2008 [arch]  = Generates Visual Studio 2008 project files.
+                                 Optional [arch] can be "Win64" or "IA64".
+  Borland Makefiles            = Generates Borland makefiles.
+* NMake Makefiles              = Generates NMake makefiles.
+  NMake Makefiles JOM          = Generates JOM makefiles.
+  MSYS Makefiles               = Generates MSYS makefiles.
+  MinGW Makefiles              = Generates a make file for use with
+                                 mingw32-make.
+  Unix Makefiles               = Generates standard UNIX makefiles.
+  Green Hills MULTI            = Generates Green Hills MULTI files
+                                 (experimental, work-in-progress).
+  Ninja                        = Generates build.ninja files.
+  Ninja Multi-Config           = Generates build-&lt;Config&gt;.ninja files.
+  Watcom WMake                 = Generates Watcom WMake makefiles.
+  CodeBlocks - MinGW Makefiles = Generates CodeBlocks project files.
+  CodeBlocks - NMake Makefiles = Generates CodeBlocks project files.
+  CodeBlocks - NMake Makefiles = Generates CodeBlocks project fi</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>la lista está disponible mediante el comando: <code>cmake --help</code></p>
+</div>
+<div class="paragraph">
+<p>Al compilar un proyecto de cliente-cpp, use la opción -Dcmake.generator="" para especificar un generador de Cmake. Por ejemplo, <code>mvn package -Dcmake.generator="Visual Studio 15 2017 [arch]"</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_compilación_del_cliente_c"><a class="anchor" href="#_compilación_del_cliente_c"></a>Compilación del Cliente C++</h4>
+<div class="paragraph">
+<p>Para compilar el cliente cpp, agregue la opción "-P compile-cpp" al comando de compilación de maven.</p>
+</div>
+<div class="paragraph">
+<p>La compilación requiere que se construya primero el módulo "compile-tools".</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_compilar_y_probar"><a class="anchor" href="#_compilar_y_probar"></a>Compilar y Probar:</h4>
+<div class="paragraph">
+<p><code>mvn package -P compile-cpp -pl example/client-cpp-example -am -DskipTest</code></p>
+</div>
+<div class="paragraph">
+<p>Para compilar en Windows, primero instale Boost y agregue las siguientes configuraciones de Maven:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>-Dboost.include.dir=${your boost header folder} -Dboost.library.dir=${your boost lib (stage) folder}`</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>P.ej.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>mvn package -P compile-cpp -pl client-cpp,server,example/client-cpp-example -am
+-D"boost.include.dir"="D:\boost_1_75_0" -D"boost.library.dir"="D:\boost_1_75_0\stage\lib" -DskipTests</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si la compilación finaliza correctamente, el archivo zip empaquetado se colocará en "client-cpp/target/client-cpp-${project.version}-cpp-${os}.zip".</p>
+</div>
+<div class="paragraph">
+<p>En máquinas Mac, la jerarquía del paquete debería verse así:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>.
++-- client
+|   +-- include
+|       +-- Session.h
+|       +-- TSIService.h
+|       +-- rpc_types.h
+|       +-- rpc_constants.h
+|       +-- thrift
+|           +-- thrift_headers...
+|   +-- lib
+|       +-- libiotdb_session.dylib</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_preguntas_y_respuestas"><a class="anchor" href="#_preguntas_y_respuestas"></a>Preguntas y Respuestas</h3>
+<div class="sect3">
+<h4 id="_en_mac"><a class="anchor" href="#_en_mac"></a>En Mac</h4>
+<div class="paragraph">
+<p>Si se producen errores al compilar el código fuente de Thrift, intente degradar su línea de comandos xcode de 12 a 11.5</p>
+</div>
+<div class="paragraph">
+<p>Vea <a href="https://stackoverflow.com/questions/63592445/ld-unsupported-tapi-file-type-tapi-tbd-in-yaml-file/65518087#65518087" class="bare">https://stackoverflow.com/questions/63592445/ld-unsupported-tapi-file-type-tapi-tbd-in-yaml-file/65518087#65518087</a>
+#
+==== En Windows</p>
+</div>
+<div class="paragraph">
+<p>Al compilar Thrift y descargar paquetes a través de "wget", puede ocurrir un posible problema molesto con un mensaje de error similar a:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>Failed to delete cached file C:\Users\Administrator\.m2\repository\.cache\download-maven-plugin\index.ser</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Posibles correcciones:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Intente eliminar el directorio ".m2\repository\.cache" y vuelva a intentarlo.</p>
+</li>
+<li>
+<p>Agregue la configuración "&lt;skipCache&gt;true&lt;/skipCache&gt;" a la fase de descarga maven-plugin maven que se queja de este error.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Esta página fue hecha usando la interfaz predeterminada de Antora.</p>
+  <p>El código de esta interfaz está licenciado bajo los términos de la licencia MPL-2.0.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
